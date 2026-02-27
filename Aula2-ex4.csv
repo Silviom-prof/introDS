@@ -1,0 +1,31 @@
+ID_Caso,Canal,Segmento,Servico,Tipo_Problema,Descricao_Reclamacao,Satisfacao_1a5,Recontato_7d,Cancelou_30d
+1,Telefone,Standard,Internet,Sem_Sinal,"Estou há três dias sem internet e ninguém resolve. Já liguei várias vezes.",1,Sim,Sim
+2,WhatsApp,Gold,Movel,Cobranca,"Fui cobrado duas vezes pelo mesmo serviço. Quero solução imediata.",1,Sim,Sim
+3,App,Standard,TV,Instalacao,"A instalação demorou, mas o técnico foi educado.",3,Nao,Nao
+4,Telefone,Gold,Internet,Lentidao,"A internet está muito lenta à noite. Isso é recorrente.",2,Sim,Nao
+5,Email,Standard,Movel,Plano_Pacote,"Gostaria apenas de confirmar meu plano atual.",4,Nao,Nao
+6,Telefone,Standard,Internet,Cobranca,"Atendimento péssimo, ninguém sabe explicar a fatura.",1,Sim,Sim
+7,WhatsApp,Gold,TV,Qualidade_Imagem,"A imagem está falhando frequentemente, estou decepcionado.",2,Sim,Nao
+8,App,Standard,Movel,Rede,"O sinal caiu algumas vezes, mas agora está normal.",3,Nao,Nao
+9,Telefone,Gold,Internet,Sem_Sinal,"Excelente atendimento, resolveram rápido.",5,Nao,Nao
+10,WhatsApp,Standard,Internet,Instalacao,"Instalaram no prazo, serviço funcionando perfeitamente.",5,Nao,Nao
+11,Telefone,Standard,Movel,Cobranca,"Cobrança indevida novamente, isso é inaceitável.",1,Sim,Sim
+12,Email,Gold,Internet,Lentidao,"Esperava mais qualidade pelo valor que pago.",2,Sim,Nao
+13,App,Standard,TV,Sem_Sinal,"Sem sinal desde ontem, aguardo retorno urgente.",2,Sim,Nao
+14,Telefone,Gold,Movel,Plano_Pacote,"Gostaria de fazer upgrade do meu plano.",4,Nao,Nao
+15,WhatsApp,Standard,Internet,Lentidao,"Melhorou depois da reinicialização do modem.",4,Nao,Nao
+16,Telefone,Standard,TV,Cobranca,"Cobrança confusa, preciso de esclarecimentos.",3,Sim,Nao
+17,App,Gold,Internet,Sem_Sinal,"Estou extremamente frustrado com a falta de serviço.",1,Sim,Sim
+18,Telefone,Standard,Movel,Rede,"O sinal varia muito durante o dia.",2,Sim,Nao
+19,Email,Gold,TV,Instalacao,"Equipe muito profissional, fiquei satisfeito.",5,Nao,Nao
+20,WhatsApp,Standard,Internet,Cobranca,"Não concordo com os valores cobrados.",2,Sim,Nao
+21,Telefone,Gold,Internet,Lentidao,"A conexão está instável, mas ainda consigo usar.",3,Nao,Nao
+22,App,Standard,Movel,Rede,"Sem internet móvel desde a manhã.",1,Sim,Sim
+23,Email,Standard,TV,Qualidade_Imagem,"Imagem melhorou após atualização.",4,Nao,Nao
+24,Telefone,Gold,Internet,Cobranca,"Resolvido rapidamente, agradeço o suporte.",5,Nao,Nao
+25,WhatsApp,Standard,Movel,Plano_Pacote,"Quero cancelar meu plano.",1,Sim,Sim
+26,Telefone,Standard,Internet,Sem_Sinal,"Estou cansado de ligar e nada muda.",1,Sim,Sim
+27,App,Gold,TV,Qualidade_Imagem,"Pequenas falhas, mas aceitável.",3,Nao,Nao
+28,Email,Standard,Internet,Lentidao,"Velocidade abaixo do contratado.",2,Sim,Nao
+29,Telefone,Gold,Movel,Cobranca,"Cobrança ajustada, obrigado pelo retorno.",4,Nao,Nao
+30,WhatsApp,Standard,Internet,Instalacao,"Agendamento foi remarcado duas vezes.",2,Sim,Nao
