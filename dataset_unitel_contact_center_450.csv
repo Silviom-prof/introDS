@@ -1,0 +1,451 @@
+﻿Caso_ID;Data;Cidade;Canal;Segmento;Servico;Tipo_Problema;Prioridade;Tempo_Espera_seg;Tempo_Resolucao_min;Resolvido_1o_Contato;Recontacto_7d;Satisfacao_1a5;Escalado_Backoffice;Compensacao_Oferecida;Cliente_Alto_Valor;Cancelou_30d
+1;2025-06-04;Benguela;Loja;Particular;Internet;Lentidão;Média;132.0;21;Não;Sim;3.0;Sim;Sim;Não;Não
+2;2025-03-28;Luanda;Telefone;Particular;Fibra;Instalação;Média;135.0;40;Não;Não;1.0;Sim;Não;Não;Não
+3;2025-05-28;Benguela;App;Particular;Internet;Cobertura;Alta;84.0;23;Não;Não;3.0;Sim;Não;Não;Não
+4;2025-04-27;Lubango;Telefone;Particular;Internet;Lentidão;Baixa;150.0;24;Sim;Não;3.0;Não;Não;Sim;Não
+5;2025-03-25;Malanje;Loja;Particular;TV;Instalação;Média;116.0;37;Não;Sim;2.0;Sim;Não;Não;Sim
+6;2025-02-06;Luanda;Telefone;Particular;Internet;Lentidão;Baixa;78.0;14;Não;Não;3.0;Sim;Não;Não;Não
+7;2025-05-11;Cabinda;Loja;Particular;Fibra;Fatura;Média;127.0;6;Sim;Não;3.0;Não;Não;Não;Não
+8;2025-01-03;Namibe;App;Particular;Internet;Falha ligação;Média;44.0;23;Sim;Não;5.0;Não;Não;Não;Não
+9;2025-05-09;Benguela;App;Particular;Movel;Lentidão;Baixa;39.0;17;Sim;Não;5.0;Não;Não;Não;Não
+10;2025-01-01;Huambo;WhatsApp;Particular;Internet;Instalação;Média;81.0;16;Sim;Não;5.0;Sim;Não;Não;Não
+11;2025-01-21;Sumbe;WhatsApp;Particular;Internet;Cancelamento;Alta;146.0;16;Sim;Não;4.0;Não;Não;Sim;Não
+12;2025-03-09;Benguela;App;Particular;Fibra;Cancelamento;Baixa;77.0;3;Sim;Não;5.0;Não;Não;Não;Não
+13;2025-05-13;Soyo;App;Empresarial;Movel;Lentidão;Média;45.0;13;Sim;Não;5.0;Não;Não;Não;Não
+14;2025-02-28;Namibe;App;Particular;Internet;Lentidão;Baixa;46.0;21;Sim;Não;4.0;Não;Não;Sim;Não
+15;2025-04-01;Benguela;Telefone;Empresarial;Pacote;Falha ligação;Média;81.0;23;Não;Sim;1.0;Não;Não;Sim;Não
+16;2025-01-20;Uíge;Loja;Particular;Pacote;Falha ligação;Média;123.0;50;Não;Sim;1.0;Sim;Não;Sim;Não
+17;2025-03-09;Namibe;Loja;Empresarial;Pacote;Falha ligação;Média;134.0;25;Não;Sim;1.0;Sim;Não;Sim;Não
+18;2025-01-15;Namibe;WhatsApp;Particular;Fibra;Configuração;Média;135.0;11;Sim;Não;3.0;Não;Não;Não;Não
+19;2025-06-22;Sumbe;Telefone;Particular;Internet;Lentidão;Média;102.0;3;Não;Sim;1.0;Sim;Não;Não;Não
+20;2025-03-08;Lubango;App;Particular;Pacote;Fatura;Baixa;20.0;12;Sim;Não;5.0;Não;Não;Não;Não
+21;2025-01-03;Lubango;Telefone;Particular;TV;Lentidão;Média;120.0;45;Sim;Não;3.0;Não;Não;Não;Não
+22;2025-06-30;Namibe;App;Particular;Movel;Falha ligação;Média;100.0;25;Sim;Sim;5.0;Sim;Não;Não;Não
+23;2025-02-09;Cabinda;Telefone;Particular;Pacote;Instalação;Alta;73.0;25;Não;Não;5.0;Sim;Sim;Sim;Não
+24;2025-01-24;Cabinda;Loja;Particular;Internet;Lentidão;Alta;;34;Sim;Não;2.0;Sim;Não;Não;Não
+25;2025-01-20;Uíge;Telefone;Empresarial;Internet;Lentidão;Alta;109.0;4;Sim;Não;4.0;Não;Não;Não;Não
+26;2025-04-02;Huambo;Telefone;Particular;Pacote;Fatura;Baixa;98.0;10;Sim;Não;3.0;Não;Não;Não;Não
+27;2025-04-16;Lubango;App;Particular;Fibra;Lentidão;Alta;51.0;19;Não;Não;4.0;Não;Sim;Sim;Não
+28;2025-02-26;Luanda;Telefone;Particular;Pacote;Configuração;Média;131.0;25;Não;Sim;1.0;Sim;Não;Não;Não
+29;2025-03-13;Lubango;WhatsApp;Empresarial;Movel;Lentidão;Baixa;55.0;13;Sim;Não;4.0;Não;Não;Sim;Não
+30;2025-05-29;Malanje;App;Particular;TV;Cancelamento;Alta;86.0;22;Sim;Não;5.0;Não;Não;Não;Não
+31;2025-01-01;Cabinda;WhatsApp;Particular;Movel;Lentidão;Média;90.0;19;Não;Sim;3.0;Não;Sim;Sim;Não
+32;2025-03-18;Soyo;Loja;Empresarial;Movel;Instalação;Média;84.0;21;Sim;Não;4.0;Sim;Não;Sim;Não
+33;2025-06-07;Soyo;Telefone;Particular;TV;Lentidão;Baixa;123.0;28;Sim;Não;2.0;Não;Não;Não;Não
+34;2025-03-14;Sumbe;Telefone;Particular;Movel;;Média;110.0;36;Não;Sim;1.0;Sim;Não;Não;Não
+35;2025-06-11;Soyo;WhatsApp;Particular;Movel;Falha ligação;Baixa;125.0;22;Não;Sim;1.0;Não;Não;Não;Sim
+36;2025-04-19;Sumbe;Telefone;Particular;Fibra;Fatura;Média;99.0;26;Sim;Não;;Não;Não;Não;Não
+37;2025-04-24;Lubango;Telefone;Particular;Pacote;Fatura;Baixa;85.0;53;Não;Sim;2.0;Não;Não;Não;Sim
+38;2025-05-05;Sumbe;WhatsApp;Empresarial;Pacote;Fatura;Média;10.0;18;Não;Sim;3.0;Não;Não;Sim;Não
+39;2025-04-09;Lubango;Telefone;Particular;Internet;Lentidão;Baixa;363.0;15;Sim;Não;4.0;Não;Não;Sim;Não
+40;2025-06-28;Huambo;App;Particular;Internet;Lentidão;Média;78.0;3;Sim;Não;5.0;Não;Não;Não;Não
+41;2025-02-26;Luanda;Telefone;Empresarial;Fibra;Lentidão;Média;77.0;18;Não;Não;4.0;Sim;Não;Sim;Não
+42;2025-04-11;Namibe;Telefone;Particular;Movel;Falha ligação;Média;176.0;26;Sim;Não;1.0;Sim;Não;Não;Não
+43;2025-03-13;Sumbe;Telefone;Particular;Internet;Instalação;Média;84.0;23;Sim;Não;4.0;Sim;Não;Não;Não
+44;2025-06-09;Uíge;App;Particular;Internet;Falha ligação;Alta;137.0;30;Não;Não;1.0;Não;Não;Não;Não
+45;2025-03-21;Huambo;WhatsApp;Particular;Movel;Falha ligação;Média;94.0;50;Sim;Não;3.0;Não;Não;Não;Não
+46;2025-06-03;Benguela;WhatsApp;Particular;Pacote;Fatura;Média;90.0;21;Não;Sim;2.0;Sim;Não;Não;Não
+47;2025-06-12;Benguela;App;Empresarial;Movel;Falha ligação;Média;58.0;20;Sim;Não;5.0;Sim;Não;Sim;Não
+48;2025-03-04;Namibe;WhatsApp;Particular;Movel;Configuração;Baixa;93.0;9;Não;Sim;2.0;Sim;Não;Não;Sim
+49;2025-02-16;Benguela;App;Particular;Movel;Configuração;Média;85.0;17;Sim;Não;5.0;Não;Não;Não;Não
+50;2025-01-22;Namibe;WhatsApp;Particular;Fibra;Lentidão;Média;107.0;19;Sim;Não;4.0;Não;Não;Sim;Não
+51;2025-03-17;Lubango;Loja;Particular;Movel;Configuração;Média;65.0;19;Sim;Não;3.0;Não;Não;Não;Não
+52;2025-02-19;Lubango;Telefone;Particular;Internet;Instalação;Média;101.0;21;Não;Sim;2.0;Sim;Não;Não;Sim
+53;2025-06-02;Malanje;Telefone;Particular;Movel;Configuração;Baixa;89.0;21;Sim;Não;5.0;Não;Não;Não;Não
+54;2025-05-22;Cabinda;Telefone;Empresarial;Pacote;Lentidão;Baixa;163.0;20;Sim;Não;;Não;Não;Sim;Não
+55;2025-01-19;Cabinda;App;Particular;Internet;Cobertura;Alta;114.0;27;Não;Sim;1.0;Sim;Não;Não;Sim
+56;2025-05-14;Sumbe;App;Particular;Internet;Falha ligação;Baixa;25.0;24;Sim;Não;5.0;Não;Não;Não;Não
+57;2025-03-03;Uíge;WhatsApp;Particular;Movel;Cobertura;Baixa;;50;Não;Não;2.0;Sim;Sim;Não;Não
+58;2025-06-29;Huambo;Loja;Particular;Internet;Lentidão;Média;108.0;25;Sim;Não;4.0;Não;Não;Não;Não
+59;2025-02-06;Namibe;WhatsApp;Particular;Internet;Lentidão;Média;;11;Não;Sim;3.0;Sim;Sim;Sim;Não
+60;2025-03-11;Benguela;WhatsApp;Particular;Fibra;Fatura;Alta;126.0;46;Sim;Não;3.0;Não;Não;Não;Não
+61;2025-05-31;Soyo;WhatsApp;Particular;Movel;Fatura;Média;114.0;6;Sim;Não;5.0;Não;Sim;Não;Não
+62;2025-04-22;Luanda;Telefone;Empresarial;Fibra;Lentidão;Média;134.0;4;Sim;Não;5.0;Não;Não;Não;Não
+63;2025-01-10;Namibe;Telefone;Empresarial;Movel;Lentidão;Baixa;117.0;36;Sim;Não;;Sim;Não;Não;Não
+64;2025-04-03;Namibe;WhatsApp;Particular;Internet;Falha ligação;Alta;90.0;26;Sim;Não;4.0;Sim;Não;Sim;Não
+65;2025-03-03;Sumbe;Telefone;Empresarial;Movel;Configuração;Média;88.0;11;Sim;Não;5.0;Não;Não;Sim;Não
+66;2025-05-08;Huambo;Telefone;Particular;Internet;Lentidão;Alta;40.0;18;Sim;Não;4.0;Não;Não;Não;Não
+67;2025-03-12;Cabinda;WhatsApp;Particular;Internet;;Baixa;87.0;34;Sim;Não;2.0;Sim;Não;Não;Não
+68;2025-05-22;Uíge;Telefone;Particular;Fibra;Lentidão;Média;354.0;33;Não;Sim;1.0;Não;Não;Não;Sim
+69;2025-01-10;Soyo;WhatsApp;Particular;Pacote;Cobertura;Baixa;85.0;25;Não;Sim;2.0;Sim;Não;Não;Sim
+70;2025-03-28;Huambo;WhatsApp;Particular;Movel;Cobertura;Média;141.0;18;Não;Não;3.0;Não;Sim;Não;Não
+71;2025-06-08;Sumbe;WhatsApp;Particular;Fibra;Cobertura;Alta;120.0;38;Sim;Não;2.0;Não;Não;Não;Não
+72;2025-01-08;Benguela;Telefone;Particular;Fibra;Lentidão;Baixa;38.0;19;Não;Não;4.0;Não;Sim;Sim;Não
+73;2025-02-13;Luanda;Telefone;Particular;Internet;Lentidão;Baixa;104.0;24;Sim;Não;4.0;Não;Não;Não;Não
+74;2025-06-23;Huambo;Telefone;Particular;Pacote;Instalação;Alta;69.0;17;Não;Sim;3.0;Sim;Sim;Não;Não
+75;2025-02-20;Soyo;App;Particular;Movel;Lentidão;Média;93.0;17;Sim;Não;5.0;Não;Não;Não;Não
+76;2025-05-25;Uíge;Telefone;Empresarial;Internet;Lentidão;Baixa;105.0;21;Sim;Não;4.0;Não;Não;Não;Não
+77;2025-06-10;Luanda;WhatsApp;Empresarial;Fibra;Cobertura;Média;79.0;27;Sim;Não;4.0;Sim;Não;Não;Não
+78;2025-02-14;Benguela;Telefone;Empresarial;Fibra;Lentidão;Média;95.0;10;Sim;Não;5.0;Não;Não;Sim;Não
+79;2025-04-30;Lubango;App;Particular;Movel;Cancelamento;Alta;140.0;18;Não;Sim;1.0;Não;Não;Não;Não
+80;2025-06-13;Benguela;;Particular;Pacote;Cobertura;Alta;91.0;38;Não;Sim;1.0;Sim;Não;Não;Não
+81;2025-01-12;Malanje;WhatsApp;Particular;Internet;Falha ligação;Média;78.0;34;Sim;Sim;2.0;Não;Não;Não;Sim
+82;2025-06-17;Luanda;WhatsApp;Particular;Movel;Falha ligação;Baixa;153.0;21;Não;Não;2.0;Sim;Não;Sim;Não
+83;2025-01-26;Benguela;Telefone;Empresarial;Movel;Cancelamento;Média;118.0;19;Sim;Não;5.0;Não;Não;Sim;Não
+84;2025-06-14;Malanje;Telefone;Particular;Pacote;Lentidão;Baixa;123.0;33;Sim;Não;2.0;Não;Não;Não;Não
+85;2025-06-02;Sumbe;WhatsApp;Empresarial;Internet;Lentidão;Média;361.0;9;Não;Sim;2.0;Sim;Não;Sim;Não
+86;2025-01-04;Luanda;App;Particular;Pacote;Cancelamento;Média;43.0;8;Sim;Não;5.0;Não;Não;Não;Não
+87;2025-05-12;Malanje;Telefone;Empresarial;Internet;Lentidão;Baixa;82.0;18;Sim;Não;5.0;Não;Não;Não;Não
+88;2025-04-20;Sumbe;Telefone;Particular;Movel;Cancelamento;Média;104.0;24;Não;Sim;2.0;Sim;Não;Sim;Não
+89;2025-05-16;Benguela;Telefone;Particular;Pacote;Falha ligação;Média;113.0;39;Sim;Não;4.0;Sim;Não;Não;Não
+90;2025-04-13;Cabinda;Loja;Particular;Movel;Falha ligação;Alta;135.0;57;Não;Não;2.0;Sim;Sim;Não;Não
+91;2025-05-23;Uíge;Telefone;Particular;TV;;Alta;128.0;14;Não;Sim;2.0;Sim;Sim;Não;Não
+92;2025-03-15;Luanda;Telefone;Particular;Movel;Lentidão;Média;57.0;21;Sim;Não;3.0;Não;Não;Não;Não
+93;2025-04-20;Sumbe;Telefone;Particular;Internet;Fatura;Média;79.0;19;Não;Sim;3.0;Sim;Sim;Não;Não
+94;2025-03-31;Soyo;App;Empresarial;Fibra;Instalação;Baixa;99.0;22;Sim;Não;5.0;Sim;Não;Não;Não
+95;2025-03-29;Luanda;Telefone;Particular;Internet;Instalação;Média;83.0;15;Sim;Não;4.0;Sim;Não;Não;Não
+96;2025-01-13;Huambo;App;Particular;Fibra;Configuração;Baixa;59.0;21;Sim;Não;5.0;Não;Não;Sim;Não
+97;2025-03-20;Benguela;Telefone;Particular;Fibra;Fatura;Baixa;94.0;4;Não;Sim;2.0;Sim;Não;Não;Sim
+98;2025-05-09;Luanda;Telefone;Particular;Pacote;Falha ligação;Alta;119.0;31;Não;Sim;2.0;Sim;Não;Sim;Não
+99;2025-02-13;Soyo;WhatsApp;Empresarial;Fibra;Falha ligação;Baixa;72.0;27;Não;Sim;1.0;Não;Não;Sim;Não
+100;2025-04-12;Sumbe;Telefone;Particular;Fibra;Lentidão;Baixa;97.0;8;Sim;Não;3.0;Não;Não;Não;Não
+101;2025-03-31;Cabinda;Telefone;Particular;Internet;Configuração;Média;119.0;25;Sim;Não;4.0;Não;Não;Não;Não
+102;2025-04-25;Huambo;App;Particular;Internet;Falha ligação;Média;130.0;33;Sim;Não;4.0;Sim;Não;Não;Não
+103;2025-03-12;Sumbe;WhatsApp;Particular;Pacote;Lentidão;Baixa;46.0;10;Sim;Não;4.0;Não;Não;Não;Não
+104;2025-04-09;Sumbe;App;Particular;Movel;Lentidão;Baixa;93.0;19;Não;Sim;;Não;Não;Não;Não
+105;2025-02-08;Namibe;Telefone;Particular;Pacote;Configuração;Alta;125.0;51;Sim;Não;3.0;Sim;Não;Não;Não
+106;2025-02-10;Luanda;WhatsApp;Particular;Fibra;Cobertura;Baixa;132.0;37;Sim;Não;3.0;Não;Não;Não;Não
+107;2025-03-06;Malanje;Telefone;Particular;TV;Lentidão;Média;128.0;23;Não;Não;3.0;Sim;Sim;Não;Não
+108;2025-03-21;Sumbe;Telefone;Empresarial;TV;Fatura;Baixa;65.0;18;Sim;Não;4.0;Não;Não;Sim;Não
+109;2025-01-05;Soyo;Loja;Particular;Fibra;Configuração;Alta;87.0;21;Não;Não;3.0;Sim;Não;Não;Não
+110;2025-05-15;Malanje;WhatsApp;Particular;Pacote;Lentidão;Baixa;78.0;18;Não;Sim;3.0;Sim;Não;Não;Não
+111;2025-06-23;Luanda;App;Particular;Pacote;Instalação;Baixa;174.0;10;Não;Não;2.0;Não;Não;Sim;Não
+112;2025-04-29;Lubango;WhatsApp;Empresarial;Movel;Configuração;Baixa;;3;Não;Não;4.0;Não;Sim;Não;Não
+113;2025-03-14;Cabinda;Telefone;Empresarial;Movel;Lentidão;Baixa;;27;Não;Sim;2.0;Sim;Não;Não;Não
+114;2025-04-06;Benguela;Telefone;Empresarial;Internet;Cobertura;Média;105.0;17;Sim;Não;5.0;Sim;Não;Sim;Não
+115;2025-06-28;Lubango;Telefone;Particular;Internet;Lentidão;Baixa;69.0;23;Não;Sim;3.0;Sim;Sim;Não;Não
+116;2025-06-09;Huambo;WhatsApp;Empresarial;Movel;Instalação;Baixa;77.0;27;Não;Sim;1.0;Sim;Não;Sim;Não
+117;2025-06-07;Namibe;App;Particular;Pacote;Fatura;Média;80.0;8;Sim;Não;4.0;Não;Não;Não;Não
+118;2025-04-10;Malanje;Telefone;Particular;TV;Instalação;Alta;188.0;33;Não;Sim;1.0;Não;Não;Não;Sim
+119;2025-02-04;Malanje;Telefone;Particular;Internet;Configuração;Média;24.0;19;Sim;Não;4.0;Não;Não;Não;Não
+120;2025-01-12;Luanda;WhatsApp;Particular;TV;Instalação;Média;89.0;34;Não;Sim;1.0;Sim;Não;Não;Sim
+121;2025-06-17;Lubango;Telefone;Empresarial;TV;Lentidão;Alta;57.0;15;Sim;Não;4.0;Não;Não;Não;Não
+122;2025-03-10;Malanje;Telefone;Particular;Fibra;Fatura;Média;327.0;20;Não;Sim;3.0;Sim;Não;Não;Não
+123;2025-04-20;Benguela;WhatsApp;Particular;Internet;Instalação;Média;70.0;25;Sim;Não;5.0;Não;Não;Não;Não
+124;2025-04-04;Huambo;WhatsApp;Particular;TV;Falha ligação;Média;96.0;22;Sim;Não;4.0;Não;Não;Sim;Não
+125;2025-04-03;Soyo;Telefone;Empresarial;Fibra;Cancelamento;Média;146.0;19;Sim;Não;4.0;Não;Não;Sim;Não
+126;2025-01-07;Uíge;Telefone;Empresarial;Internet;Falha ligação;Média;70.0;36;Sim;Não;3.0;Sim;Não;Sim;Não
+127;2025-02-21;Huambo;Telefone;Particular;TV;Fatura;Baixa;161.0;22;Sim;Não;3.0;Não;Não;Não;Não
+128;2025-02-10;Benguela;Loja;Particular;Internet;Falha ligação;Alta;79.0;29;Não;Não;2.0;Não;Não;Não;Não
+129;2025-01-23;Huambo;Telefone;Empresarial;Movel;Falha ligação;Baixa;147.0;20;Sim;Não;5.0;Não;Não;Sim;Não
+130;2025-04-30;Benguela;App;Particular;Pacote;Instalação;Média;108.0;31;Sim;Não;4.0;Não;Não;Não;Não
+131;2025-03-19;Soyo;App;Particular;Pacote;Configuração;Baixa;42.0;14;Não;Sim;3.0;Não;Sim;Sim;Não
+132;2025-06-12;Huambo;WhatsApp;Particular;Pacote;Lentidão;Média;10.0;9;Sim;Não;4.0;Não;Não;Sim;Não
+133;2025-01-11;Soyo;Telefone;Particular;Movel;Instalação;Média;104.0;18;Não;Sim;3.0;Não;Não;Não;Não
+134;2025-05-08;Luanda;Telefone;Particular;Pacote;Configuração;Baixa;152.0;6;Sim;Não;2.0;Não;Não;Não;Não
+135;2025-04-17;Soyo;WhatsApp;Particular;Pacote;Fatura;Média;71.0;15;Sim;Não;5.0;Não;Sim;Sim;Não
+136;2025-03-23;Namibe;WhatsApp;Particular;TV;Falha ligação;Baixa;175.0;19;Sim;Não;2.0;Não;Não;Não;Não
+137;2025-02-10;Lubango;Telefone;Particular;Internet;Lentidão;Baixa;135.0;18;Sim;Não;3.0;Não;Não;Não;Não
+138;2025-04-01;Malanje;Telefone;Empresarial;Fibra;Falha ligação;Alta;68.0;29;Sim;Sim;4.0;Sim;Não;Sim;Não
+139;2025-05-24;Luanda;Loja;Particular;Movel;Cobertura;Média;139.0;28;Não;Sim;1.0;Não;Não;Não;Sim
+140;2025-03-28;Lubango;App;Particular;TV;Lentidão;Média;77.0;11;Não;Não;4.0;Não;Sim;Sim;Não
+141;2025-02-05;Soyo;App;Empresarial;Fibra;Falha ligação;Média;86.0;28;Sim;Não;5.0;Sim;Não;Sim;Não
+142;2025-05-25;Malanje;App;Empresarial;TV;Lentidão;Alta;120.0;3;Sim;Não;5.0;Não;Não;Sim;Não
+143;2025-06-02;Cabinda;Telefone;Particular;Internet;Lentidão;Média;181.0;5;Sim;Não;2.0;Não;Não;Não;Não
+144;2025-06-11;Namibe;App;Particular;Fibra;Cancelamento;Baixa;81.0;22;Sim;Não;;Não;Não;Não;Não
+145;2025-06-06;Sumbe;Telefone;Empresarial;TV;Cobertura;Média;112.0;21;Sim;Não;5.0;Sim;Não;Sim;Não
+146;2025-06-23;Namibe;Telefone;Empresarial;Fibra;Falha ligação;Baixa;107.0;25;Sim;Não;5.0;Sim;Não;Não;Não
+147;2025-05-03;Cabinda;App;Particular;Internet;Lentidão;Baixa;66.0;24;Não;Sim;3.0;Sim;Sim;Não;Não
+148;2025-03-30;Malanje;Telefone;Particular;Pacote;Configuração;Média;107.0;12;Sim;Não;4.0;Não;Não;Não;Não
+149;2025-05-31;Huambo;Telefone;Particular;TV;Instalação;Média;144.0;30;Não;Sim;1.0;Sim;Não;Não;Sim
+150;2025-01-02;Lubango;App;Particular;Fibra;Fatura;Baixa;415.0;16;Sim;Não;5.0;Não;Não;Sim;Não
+151;2025-06-16;Soyo;WhatsApp;Empresarial;Internet;Instalação;Média;73.0;21;Sim;Não;4.0;Sim;Não;Sim;Não
+152;2025-01-03;Sumbe;Telefone;Particular;Fibra;Cobertura;Alta;139.0;60;Não;Sim;1.0;Não;Não;Não;Não
+153;2025-05-10;Cabinda;Telefone;Particular;Internet;Cancelamento;Alta;106.0;21;Sim;Não;4.0;Não;Não;Não;Não
+154;2025-06-13;Namibe;Loja;Particular;Fibra;Lentidão;Média;171.0;21;Não;Sim;1.0;Sim;Não;Não;Sim
+155;2025-05-30;Uíge;Loja;Empresarial;Movel;Falha ligação;Baixa;154.0;32;Sim;Não;3.0;Sim;Não;Não;Não
+156;2025-06-26;Sumbe;Telefone;Particular;Fibra;Instalação;Baixa;105.0;36;Sim;Não;3.0;Sim;Não;Não;Não
+157;2025-04-06;Benguela;Telefone;Particular;Pacote;Lentidão;Alta;123.0;24;Sim;Não;4.0;Não;Não;Não;Não
+158;2025-06-30;Uíge;WhatsApp;Particular;Pacote;Configuração;Alta;152.0;21;Não;Não;3.0;Sim;Não;Não;Não
+159;2025-05-30;Malanje;App;Particular;Movel;Falha ligação;Média;116.0;22;Sim;Não;5.0;Sim;Não;Sim;Não
+160;2025-06-22;Namibe;App;Particular;Movel;Configuração;Média;98.0;16;Sim;Não;5.0;Não;Não;Sim;Não
+161;2025-01-18;Cabinda;Loja;Particular;TV;Configuração;Média;130.0;30;Sim;Não;1.0;Sim;Não;Sim;Não
+162;2025-04-25;Namibe;WhatsApp;Particular;TV;Configuração;Alta;78.0;37;Sim;Não;3.0;Sim;Não;Não;Não
+163;2025-01-01;Uíge;App;Particular;Fibra;Instalação;Média;69.0;18;Sim;Não;5.0;Sim;Não;Não;Não
+164;2025-06-19;Luanda;Telefone;Empresarial;Movel;Instalação;Média;143.0;32;Sim;Não;2.0;Sim;Não;Não;Não
+165;2025-04-13;Uíge;Telefone;Particular;Pacote;Cobertura;Baixa;146.0;36;Sim;Não;1.0;Não;Não;Não;Não
+166;2025-02-06;Namibe;Telefone;Particular;Internet;Cobertura;Média;124.0;23;Não;Não;2.0;Sim;Não;Não;Não
+167;2025-03-23;Soyo;WhatsApp;Particular;TV;Falha ligação;Alta;115.0;22;Não;Sim;3.0;Não;Não;Não;Não
+168;2025-03-04;Uíge;App;Particular;TV;Falha ligação;Baixa;139.0;26;Não;Sim;1.0;Sim;Não;Não;Sim
+169;2025-05-31;Cabinda;;Particular;Fibra;Cancelamento;Baixa;78.0;18;Não;Sim;1.0;Sim;Não;Não;Sim
+170;2025-06-28;Soyo;Telefone;Particular;Internet;Cobertura;Alta;127.0;23;Sim;Não;3.0;Não;Não;Não;Não
+171;2025-03-08;Sumbe;Telefone;Particular;TV;Lentidão;Baixa;66.0;19;Sim;Não;4.0;Não;Não;Não;Não
+172;2025-05-30;Malanje;WhatsApp;Particular;Movel;Falha ligação;Média;121.0;23;Não;Sim;2.0;Sim;Sim;Sim;Não
+173;2025-04-28;Sumbe;Telefone;Particular;TV;Falha ligação;Média;96.0;29;Não;Não;2.0;Não;Não;Não;Não
+174;2025-01-02;Huambo;App;Particular;TV;Falha ligação;Baixa;42.0;13;Não;Não;3.0;Não;Sim;Não;Não
+175;2025-01-05;Uíge;Telefone;Particular;Movel;Falha ligação;Baixa;99.0;29;Sim;Não;3.0;Não;Não;Não;Não
+176;2025-02-08;Luanda;Loja;Particular;TV;Falha ligação;Média;143.0;44;Não;Não;3.0;Não;Sim;Não;Não
+177;2025-03-04;Lubango;Telefone;Particular;Movel;Configuração;Média;125.0;16;Sim;Não;4.0;Não;Não;Não;Não
+178;2025-01-22;Lubango;WhatsApp;Particular;Pacote;Falha ligação;Média;112.0;19;Sim;Não;4.0;Sim;Não;Não;Não
+179;2025-03-13;Namibe;WhatsApp;Empresarial;Fibra;Lentidão;Alta;96.0;16;Não;Sim;2.0;Não;Não;Sim;Não
+180;2025-01-20;Soyo;Telefone;Particular;Internet;Cancelamento;Alta;106.0;11;Sim;Não;;Não;Não;Não;Não
+181;2025-03-01;Cabinda;Telefone;Particular;Internet;Cobertura;Alta;143.0;43;Não;Sim;1.0;Não;Não;Não;Sim
+182;2025-05-06;Benguela;Telefone;Particular;Fibra;;Média;91.0;21;Sim;Não;4.0;Não;Não;Não;Não
+183;2025-01-22;Lubango;Loja;Particular;Pacote;Fatura;Média;131.0;15;Sim;Não;2.0;Não;Não;Não;Não
+184;2025-01-27;Cabinda;Loja;Particular;Fibra;Instalação;Baixa;152.0;36;Sim;Não;2.0;Sim;Não;Não;Não
+185;2025-04-09;Huambo;App;Particular;Movel;Fatura;Baixa;70.0;4;Sim;Não;5.0;Não;Não;Não;Não
+186;2025-03-12;Luanda;WhatsApp;Particular;TV;Falha ligação;Alta;113.0;31;Não;Sim;1.0;Sim;Não;Não;Sim
+187;2025-01-28;Uíge;WhatsApp;Particular;Fibra;Lentidão;Média;157.0;28;Sim;Não;2.0;Não;Não;Não;Não
+188;2025-02-04;Huambo;App;Particular;Pacote;Lentidão;Alta;150.0;8;Sim;Não;5.0;Não;Não;Não;Não
+189;2025-03-13;Cabinda;Telefone;Particular;Pacote;Lentidão;Alta;137.0;22;Não;Sim;1.0;Não;Não;Não;Sim
+190;2025-06-27;Uíge;WhatsApp;Particular;Pacote;Falha ligação;Baixa;201.0;24;Sim;Não;3.0;Não;Não;Não;Não
+191;2025-04-25;Benguela;App;Empresarial;Fibra;Lentidão;Média;35.0;8;Sim;Não;5.0;Não;Não;Não;Não
+192;2025-06-02;Sumbe;WhatsApp;Particular;TV;Fatura;Média;12.0;9;Sim;Não;5.0;Não;Não;Não;Não
+193;2025-01-03;Benguela;Telefone;Particular;Internet;Instalação;Média;86.0;29;Não;Não;1.0;Não;Não;Não;Não
+194;2025-06-26;Benguela;App;Particular;Movel;Fatura;Média;;26;Sim;Não;5.0;Não;Não;Não;Não
+195;2025-03-21;Soyo;Telefone;Particular;Pacote;;Alta;120.0;9;Sim;Não;4.0;Não;Não;Não;Não
+196;2025-06-23;Malanje;App;Particular;Internet;Fatura;Média;35.0;14;Não;Sim;2.0;Sim;Não;Sim;Não
+197;2025-04-12;Huambo;App;Empresarial;Fibra;Fatura;Baixa;10.0;23;Sim;Não;5.0;Não;Não;Não;Não
+198;2025-05-28;Luanda;Telefone;Particular;Pacote;Fatura;Baixa;128.0;10;Sim;Não;3.0;Não;Sim;Não;Não
+199;2025-06-06;Benguela;Telefone;Empresarial;Movel;Lentidão;Baixa;25.0;26;Sim;Não;4.0;Não;Não;Não;Não
+200;2025-03-03;Uíge;App;Particular;TV;Cobertura;Alta;100.0;37;Sim;Não;3.0;Sim;Não;Sim;Não
+201;2025-05-23;Cabinda;Telefone;Particular;TV;Falha ligação;Média;69.0;26;Sim;Não;3.0;Sim;Não;Não;Não
+202;2025-02-19;Huambo;App;Particular;Internet;Lentidão;Baixa;75.0;15;Sim;Não;5.0;Não;Não;Sim;Não
+203;2025-03-16;Uíge;Loja;Empresarial;Movel;Fatura;Média;93.0;24;Sim;Não;5.0;Não;Sim;Sim;Não
+204;2025-04-23;Luanda;App;Particular;Movel;Falha ligação;Média;55.0;23;Não;Sim;1.0;Não;Não;Não;Não
+205;2025-03-02;Soyo;Loja;Particular;Movel;Configuração;Baixa;119.0;27;Não;Sim;1.0;Sim;Não;Sim;Não
+206;2025-01-16;Lubango;Loja;Empresarial;Movel;Lentidão;Média;129.0;12;Sim;Não;4.0;Não;Não;Sim;Não
+207;2025-02-04;Sumbe;Telefone;Particular;TV;Fatura;Média;33.0;24;Sim;Não;4.0;Não;Sim;Não;Não
+208;2025-04-07;Uíge;Telefone;Empresarial;Pacote;Cobertura;Alta;126.0;23;Não;Não;2.0;Sim;Não;Sim;Não
+209;2025-04-28;Namibe;Telefone;Particular;Fibra;Configuração;Média;324.0;21;Não;Não;1.0;Sim;Não;Não;Não
+210;2025-05-28;Malanje;WhatsApp;Empresarial;Fibra;Lentidão;Alta;126.0;16;Sim;Não;5.0;Não;Não;Sim;Não
+211;2025-02-10;Huambo;Loja;Particular;Movel;Lentidão;Baixa;187.0;37;Sim;Não;1.0;Não;Não;Não;Não
+212;2025-06-16;Namibe;WhatsApp;Particular;Pacote;Fatura;Alta;90.0;24;Não;Sim;2.0;Não;Não;Sim;Não
+213;2025-05-03;Huambo;WhatsApp;Particular;Movel;Configuração;Média;117.0;28;Sim;Não;3.0;Não;Não;Sim;Não
+214;2025-04-05;Benguela;Telefone;Particular;Internet;Instalação;Média;79.0;33;Não;Sim;1.0;Sim;Sim;Não;Sim
+215;2025-06-06;Cabinda;Telefone;Particular;Fibra;Configuração;Alta;144.0;6;Sim;Não;2.0;Não;Não;Não;Não
+216;2025-04-20;Huambo;Telefone;Particular;Fibra;Instalação;Média;71.0;11;Não;Sim;2.0;Sim;Não;Não;Sim
+217;2025-03-17;Malanje;Telefone;Empresarial;Internet;Instalação;Média;93.0;31;Não;Sim;2.0;Não;Não;Sim;Sim
+218;2025-03-23;Luanda;Telefone;Empresarial;Fibra;Lentidão;Baixa;137.0;63;Sim;Não;4.0;Não;Não;Sim;Não
+219;2025-01-18;Huambo;App;Particular;Pacote;Fatura;Baixa;124.0;3;Sim;Não;5.0;Não;Não;Sim;Não
+220;2025-01-21;Luanda;WhatsApp;Particular;Internet;Falha ligação;Média;53.0;27;Não;Sim;1.0;Sim;Não;Não;Sim
+221;2025-01-23;Soyo;Telefone;Empresarial;Pacote;Falha ligação;Média;116.0;25;Sim;Não;5.0;Sim;Não;Não;Não
+222;2025-03-08;Uíge;Loja;Particular;Movel;Falha ligação;Média;72.0;35;Sim;Sim;3.0;Sim;Não;Não;Não
+223;2025-06-10;Huambo;Loja;Particular;Fibra;Cobertura;Baixa;;38;Sim;Não;4.0;Sim;Não;Não;Não
+224;2025-03-04;Benguela;WhatsApp;Particular;Movel;Falha ligação;Baixa;125.0;20;Não;Não;1.0;Sim;Não;Sim;Não
+225;2025-01-20;Luanda;WhatsApp;Particular;TV;Falha ligação;Alta;95.0;19;Não;Não;3.0;Sim;Não;Não;Não
+226;2025-04-05;Sumbe;Telefone;Particular;Movel;Cobertura;Alta;110.0;35;Não;Sim;2.0;Sim;Não;Não;Sim
+227;2025-02-08;Lubango;Telefone;Particular;Fibra;Configuração;Média;342.0;22;Não;Não;3.0;Não;Não;Não;Não
+228;2025-01-27;Luanda;App;Empresarial;Internet;Fatura;Média;38.0;3;Sim;Não;5.0;Não;Não;Sim;Não
+229;2025-01-22;Lubango;Telefone;Particular;Internet;Fatura;Alta;83.0;5;Não;Sim;;Não;Não;Não;Sim
+230;2025-03-16;Sumbe;Telefone;Particular;Internet;Configuração;Média;75.0;8;Sim;Não;4.0;Não;Não;Não;Não
+231;2025-01-28;Cabinda;WhatsApp;Empresarial;Pacote;Lentidão;Baixa;165.0;19;Sim;Não;5.0;Não;Não;Sim;Não
+232;2025-06-28;Huambo;Telefone;Particular;Movel;Lentidão;Média;70.0;19;Não;Sim;2.0;Sim;Não;Sim;Não
+233;2025-03-08;Sumbe;Telefone;Particular;Pacote;Lentidão;Baixa;91.0;16;Sim;Não;4.0;Não;Não;Não;Não
+234;2025-01-16;Huambo;Loja;Particular;TV;Fatura;Baixa;128.0;25;Sim;Não;2.0;Não;Não;Sim;Não
+235;2025-01-06;Lubango;App;Particular;Pacote;Lentidão;Média;56.0;10;Sim;Não;4.0;Não;Não;Não;Não
+236;2025-04-12;Benguela;Telefone;Particular;Fibra;Configuração;Alta;85.0;3;Não;Sim;3.0;Não;Sim;Não;Não
+237;2025-01-23;Namibe;Telefone;Particular;Fibra;Falha ligação;Baixa;71.0;41;Não;Sim;2.0;Sim;Não;Não;Sim
+238;2025-05-25;Cabinda;WhatsApp;Particular;TV;Instalação;Baixa;182.0;29;Não;Sim;1.0;Sim;Não;Não;Sim
+239;2025-03-01;Soyo;App;Particular;Internet;Falha ligação;Baixa;113.0;27;Sim;Não;5.0;Sim;Não;Não;Não
+240;2025-05-28;Huambo;WhatsApp;Particular;Fibra;Lentidão;Alta;202.0;26;Sim;Não;2.0;Não;Não;Não;Não
+241;2025-02-18;Uíge;Telefone;Particular;Pacote;Cobertura;Média;120.0;23;Não;Sim;3.0;Não;Não;Não;Não
+242;2025-06-30;Namibe;Telefone;Particular;Internet;Falha ligação;Média;68.0;32;Não;Sim;1.0;Não;Não;Sim;Não
+243;2025-06-13;Huambo;WhatsApp;Empresarial;Pacote;Cobertura;Média;76.0;14;Sim;Não;5.0;Sim;Não;Sim;Não
+244;2025-02-02;Namibe;Loja;Particular;Internet;Cancelamento;Alta;104.0;17;Não;Sim;3.0;Sim;Sim;Não;Não
+245;2025-01-27;Huambo;Telefone;Particular;Pacote;Cancelamento;Alta;154.0;25;Não;Sim;1.0;Não;Não;Não;Não
+246;2025-02-23;Namibe;WhatsApp;Particular;Fibra;Lentidão;Baixa;106.0;32;Não;Sim;1.0;Não;Não;Não;Sim
+247;2025-04-16;Lubango;Loja;Particular;TV;Configuração;Baixa;117.0;16;Sim;Não;4.0;Não;Não;Não;Não
+248;2025-01-19;Namibe;WhatsApp;Empresarial;TV;Lentidão;Média;150.0;23;Não;Sim;1.0;Sim;Não;Sim;Sim
+249;2025-05-04;Malanje;App;Particular;TV;Configuração;Alta;;13;Sim;Não;5.0;Não;Não;Não;Não
+250;2025-01-25;Luanda;Telefone;Particular;Fibra;Instalação;Baixa;82.0;16;Não;Sim;2.0;Sim;Não;Não;Sim
+251;2025-01-07;Luanda;Telefone;Particular;Movel;Fatura;Baixa;119.0;29;Sim;Não;2.0;Não;Não;Não;Não
+252;2025-01-12;Lubango;WhatsApp;Particular;TV;Falha ligação;Baixa;64.0;32;Não;Sim;2.0;Sim;Sim;Não;Sim
+253;2025-02-28;Cabinda;App;Particular;Internet;Cobertura;Baixa;82.0;24;Sim;Não;5.0;Não;Não;Não;Não
+254;2025-05-13;Soyo;WhatsApp;Particular;TV;Fatura;Média;66.0;7;Não;Sim;;Sim;Não;Não;Sim
+255;2025-03-08;Sumbe;WhatsApp;Particular;Movel;Falha ligação;Baixa;114.0;21;Não;Sim;2.0;Sim;Não;Não;Não
+256;2025-01-29;Malanje;Telefone;Empresarial;Pacote;Falha ligação;Média;112.0;25;Sim;Não;5.0;Não;Não;Não;Não
+257;2025-03-30;Uíge;WhatsApp;Particular;Movel;Fatura;Baixa;90.0;9;Sim;Não;5.0;Não;Não;Não;Não
+258;2025-01-10;Uíge;App;Particular;Fibra;Fatura;Baixa;58.0;20;Sim;Não;5.0;Não;Não;Não;Não
+259;2025-05-06;Uíge;Loja;Empresarial;TV;Lentidão;Alta;134.0;16;Sim;Não;4.0;Não;Não;Não;Não
+260;2025-02-18;Benguela;Loja;Empresarial;Internet;Lentidão;Média;108.0;27;Sim;Não;;Não;Não;Sim;Não
+261;2025-05-15;Namibe;WhatsApp;Particular;Pacote;Configuração;Alta;;25;Não;Sim;2.0;Sim;Não;Não;Não
+262;2025-06-24;Sumbe;WhatsApp;Particular;Internet;Cobertura;Baixa;89.0;32;Não;Não;1.0;Não;Não;Não;Não
+263;2025-06-26;Luanda;WhatsApp;Particular;Movel;Fatura;Média;60.0;3;Sim;Não;4.0;Não;Não;Não;Não
+264;2025-05-02;Benguela;App;Particular;TV;Falha ligação;Alta;36.0;25;Não;Não;3.0;Sim;Sim;Não;Não
+265;2025-03-19;Huambo;Telefone;Particular;Movel;Falha ligação;Alta;122.0;20;Não;Não;2.0;Sim;Não;Não;Não
+266;2025-03-28;Soyo;App;Empresarial;TV;Falha ligação;Média;105.0;9;Sim;Não;5.0;Sim;Não;Sim;Não
+267;2025-01-15;Cabinda;Loja;Particular;Pacote;Lentidão;Alta;124.0;16;Sim;Não;3.0;Não;Não;Sim;Não
+268;2025-02-26;Sumbe;Telefone;Particular;TV;Falha ligação;Média;90.0;28;Não;Sim;1.0;Sim;Não;Não;Não
+269;2025-02-16;Soyo;Telefone;Particular;Movel;Cancelamento;Baixa;64.0;14;Sim;Não;5.0;Não;Não;Não;Não
+270;2025-06-17;Cabinda;WhatsApp;Particular;Internet;Lentidão;Média;142.0;16;Sim;Não;3.0;Não;Não;Não;Não
+271;2025-02-19;Benguela;Telefone;Particular;Internet;Cobertura;Alta;142.0;18;Não;Sim;2.0;Sim;Não;Não;Sim
+272;2025-04-28;Soyo;Telefone;Particular;Fibra;Fatura;Alta;105.0;25;Sim;Não;5.0;Não;Não;Não;Não
+273;2025-04-26;Huambo;App;Particular;Fibra;Configuração;Média;10.0;8;Sim;Não;4.0;Não;Não;Não;Não
+274;2025-01-10;Cabinda;;Particular;Fibra;Fatura;Média;119.0;15;Não;Sim;2.0;Sim;Não;Não;Sim
+275;2025-05-09;Soyo;Telefone;Particular;TV;Falha ligação;Alta;125.0;23;Não;Não;2.0;Não;Não;Sim;Não
+276;2025-04-14;Sumbe;WhatsApp;Particular;Internet;Falha ligação;Média;116.0;26;Não;Sim;1.0;Sim;Não;Não;Sim
+277;2025-05-17;Luanda;Loja;Particular;Fibra;Falha ligação;Média;173.0;35;Sim;Não;2.0;Sim;Não;Não;Não
+278;2025-06-29;Sumbe;Loja;Particular;Pacote;Instalação;Baixa;144.0;29;Sim;Não;2.0;Sim;Não;Não;Não
+279;2025-01-30;Huambo;Telefone;Particular;Fibra;Falha ligação;Baixa;95.0;24;Não;Não;3.0;Não;Não;Não;Não
+280;2025-01-11;Benguela;WhatsApp;Particular;Movel;Configuração;Alta;108.0;14;Sim;Não;4.0;Não;Não;Não;Não
+281;2025-02-08;Soyo;Telefone;Particular;Internet;Cancelamento;Baixa;105.0;34;Sim;Não;3.0;Não;Não;Não;Não
+282;2025-03-22;Benguela;WhatsApp;Empresarial;Internet;Configuração;Média;115.0;13;Não;Sim;2.0;Sim;Não;Não;Não
+283;2025-04-23;Uíge;Telefone;Particular;Internet;Configuração;Alta;149.0;17;Sim;Não;3.0;Não;Não;Sim;Não
+284;2025-06-26;Sumbe;Telefone;Particular;Fibra;Lentidão;Baixa;;9;Sim;Não;4.0;Não;Não;Não;Não
+285;2025-04-02;Namibe;Telefone;Empresarial;Fibra;Configuração;Média;31.0;16;Não;Sim;2.0;Sim;Não;Não;Não
+286;2025-01-04;Sumbe;WhatsApp;Particular;Fibra;Cobertura;Baixa;113.0;41;Sim;Não;3.0;Sim;Não;Não;Não
+287;2025-05-04;Soyo;WhatsApp;Empresarial;Movel;Fatura;Média;88.0;10;Sim;Não;5.0;Não;Não;Sim;Não
+288;2025-02-12;Malanje;WhatsApp;Particular;Fibra;Falha ligação;Alta;142.0;10;Sim;Não;3.0;Sim;Não;Não;Não
+289;2025-05-27;Benguela;Telefone;Empresarial;TV;Lentidão;Média;93.0;22;Sim;Não;5.0;Não;Não;Sim;Não
+290;2025-01-01;Namibe;WhatsApp;Particular;Movel;Lentidão;Média;55.0;30;Sim;Não;4.0;Sim;Não;Sim;Não
+291;2025-05-24;Benguela;WhatsApp;Empresarial;Pacote;Instalação;Média;114.0;22;Sim;Não;5.0;Não;Não;Não;Não
+292;2025-05-21;Sumbe;App;Particular;Fibra;Lentidão;Baixa;97.0;33;Sim;Não;;Sim;Não;Não;Não
+293;2025-02-25;Soyo;App;Particular;Internet;Cobertura;Alta;99.0;26;Sim;Não;4.0;Sim;Não;Sim;Não
+294;2025-04-28;Namibe;WhatsApp;Empresarial;Internet;Lentidão;Baixa;80.0;12;Sim;Não;5.0;Não;Não;Sim;Não
+295;2025-02-14;Sumbe;App;Empresarial;Internet;Fatura;Baixa;86.0;3;Não;Sim;3.0;Sim;Não;Sim;Não
+296;2025-04-26;Huambo;Telefone;Particular;Fibra;Instalação;Alta;115.0;24;Não;Não;3.0;Sim;Não;Não;Não
+297;2025-06-09;Huambo;App;Particular;Movel;Cobertura;Alta;109.0;27;Sim;Não;4.0;Sim;Não;Não;Não
+298;2025-06-22;Cabinda;Loja;Particular;Pacote;Falha ligação;Alta;181.0;31;Não;Não;1.0;Não;Não;Não;Não
+299;2025-03-10;Soyo;App;Particular;Pacote;Configuração;Baixa;65.0;7;Sim;Não;5.0;Não;Não;Não;Não
+300;2025-06-15;Huambo;Telefone;Empresarial;Fibra;Falha ligação;Média;87.0;29;Sim;Não;4.0;Não;Não;Não;Não
+301;2025-06-25;Soyo;Loja;Particular;Movel;Configuração;Média;141.0;15;Sim;Não;3.0;Não;Não;Não;Não
+302;2025-05-31;Malanje;Telefone;Empresarial;Internet;Configuração;Alta;115.0;26;Sim;Não;4.0;Não;Não;Sim;Não
+303;2025-02-03;Soyo;Telefone;Particular;Internet;Configuração;Média;109.0;33;Não;Sim;1.0;Não;Não;Sim;Sim
+304;2025-06-10;Huambo;Loja;Particular;Internet;Lentidão;Baixa;87.0;13;Sim;Não;3.0;Não;Não;Não;Não
+305;2025-02-10;Sumbe;App;Empresarial;TV;Configuração;Baixa;10.0;48;Sim;Não;5.0;Não;Não;Não;Não
+306;2025-05-16;Uíge;WhatsApp;Particular;TV;Lentidão;Média;129.0;20;Sim;Não;4.0;Não;Não;Não;Não
+307;2025-05-19;Namibe;Telefone;Empresarial;Pacote;Cancelamento;Média;106.0;9;Não;Sim;1.0;Não;Não;Não;Sim
+308;2025-03-24;Cabinda;App;Particular;Movel;Configuração;Média;172.0;19;Sim;Não;4.0;Não;Não;Não;Não
+309;2025-06-25;Soyo;WhatsApp;Particular;Internet;Cancelamento;Média;98.0;23;Sim;Não;4.0;Não;Não;Não;Não
+310;2025-01-14;Uíge;WhatsApp;Empresarial;Internet;Cobertura;Média;131.0;30;Sim;Não;2.0;Sim;Não;Sim;Não
+311;2025-05-17;Huambo;Telefone;Empresarial;Movel;Fatura;Baixa;49.0;15;Sim;Não;4.0;Não;Não;Sim;Não
+312;2025-03-16;Luanda;App;Particular;Movel;Configuração;Média;140.0;25;Sim;Não;3.0;Não;Não;Não;Não
+313;2025-02-04;Cabinda;Telefone;Particular;TV;Cancelamento;Alta;162.0;16;Sim;Não;3.0;Não;Não;Sim;Não
+314;2025-02-06;Uíge;App;Empresarial;Pacote;Lentidão;Baixa;42.0;14;Não;Não;4.0;Não;Não;Sim;Não
+315;2025-02-24;Benguela;App;Particular;Movel;Lentidão;Baixa;76.0;23;Sim;Não;5.0;Não;Não;Não;Não
+316;2025-04-29;Uíge;Telefone;Empresarial;Pacote;Falha ligação;Média;55.0;41;Sim;Não;5.0;Sim;Não;Não;Não
+317;2025-03-23;Soyo;Telefone;Particular;Fibra;Lentidão;Média;89.0;14;Não;Sim;2.0;Não;Sim;Não;Não
+318;2025-02-13;Namibe;App;Particular;Movel;Lentidão;Média;51.0;48;Sim;Não;5.0;Não;Não;Não;Não
+319;2025-02-14;Luanda;App;Particular;Fibra;Instalação;Baixa;121.0;25;Não;Sim;1.0;Sim;Não;Não;Não
+320;2025-04-14;Sumbe;WhatsApp;Particular;TV;Cobertura;Baixa;67.0;17;Não;Não;4.0;Não;Não;Não;Não
+321;2025-03-16;Sumbe;WhatsApp;Particular;Internet;Lentidão;Média;83.0;31;Sim;Não;4.0;Sim;Não;Não;Não
+322;2025-02-10;Huambo;App;Particular;Movel;Lentidão;Média;65.0;3;Não;Não;4.0;Não;Sim;Não;Não
+323;2025-01-11;Huambo;Telefone;Particular;Movel;Cobertura;Média;104.0;25;Sim;Não;4.0;Sim;Não;Não;Não
+324;2025-06-30;Lubango;WhatsApp;Particular;Fibra;Lentidão;Alta;10.0;17;Sim;Não;3.0;Não;Não;Não;Não
+325;2025-06-17;Soyo;App;Particular;Internet;Configuração;Média;66.0;20;Sim;Não;5.0;Não;Não;Não;Não
+326;2025-02-08;Benguela;App;Particular;TV;Cobertura;Média;157.0;34;Não;Sim;1.0;Sim;Sim;Sim;Não
+327;2025-05-03;Huambo;Loja;Particular;Movel;Configuração;Média;311.0;14;Sim;Não;;Não;Não;Sim;Não
+328;2025-01-11;Lubango;Telefone;Particular;Fibra;Lentidão;Baixa;185.0;18;Sim;Não;4.0;Não;Não;Sim;Não
+329;2025-02-25;Sumbe;App;Particular;Internet;Cancelamento;Média;75.0;14;Não;Não;2.0;Não;Não;Não;Não
+330;2025-06-18;Namibe;Telefone;Particular;Movel;Fatura;Média;105.0;15;Sim;Não;5.0;Não;Não;Não;Não
+331;2025-01-05;Soyo;App;Particular;Fibra;Lentidão;Média;54.0;10;Sim;Não;4.0;Não;Não;Não;Não
+332;2025-02-03;Lubango;WhatsApp;Particular;Pacote;Instalação;Média;111.0;23;Não;Sim;1.0;Não;Não;Não;Sim
+333;2025-04-20;Sumbe;Loja;Particular;Internet;Cancelamento;Média;90.0;23;Sim;Não;5.0;Não;Não;Não;Não
+334;2025-05-20;Lubango;Telefone;Empresarial;Movel;Configuração;Alta;76.0;28;Não;Sim;1.0;Sim;Sim;Não;Sim
+335;2025-04-15;Uíge;Telefone;Particular;Internet;Configuração;Média;14.0;29;Sim;Não;3.0;Sim;Não;Não;Não
+336;2025-02-22;Malanje;Telefone;Particular;Movel;Fatura;Média;130.0;3;Sim;Não;3.0;Não;Não;Não;Não
+337;2025-04-25;Uíge;App;Particular;Movel;Falha ligação;Média;93.0;25;Não;Não;3.0;Sim;Não;Sim;Não
+338;2025-06-03;Huambo;WhatsApp;Particular;Movel;Configuração;Média;45.0;11;Não;Sim;2.0;Sim;Não;Não;Sim
+339;2025-02-14;Uíge;App;Particular;Internet;Lentidão;Média;48.0;32;Não;Sim;1.0;Não;Não;Não;Não
+340;2025-02-10;Namibe;WhatsApp;Particular;Internet;Instalação;Baixa;157.0;41;Não;Sim;1.0;Sim;Sim;Sim;Não
+341;2025-05-21;Benguela;Telefone;Empresarial;Fibra;Lentidão;Média;110.0;6;Sim;Não;4.0;Não;Não;Sim;Não
+342;2025-05-28;Cabinda;Telefone;Particular;Movel;Fatura;Alta;80.0;20;Sim;Não;4.0;Não;Não;Não;Não
+343;2025-05-25;Luanda;Telefone;Particular;TV;Falha ligação;Baixa;70.0;33;Não;Não;2.0;Não;Não;Não;Não
+344;2025-04-08;Namibe;App;Empresarial;Fibra;Cancelamento;Média;68.0;13;Sim;Não;5.0;Não;Não;Sim;Não
+345;2025-03-15;Lubango;WhatsApp;Particular;Internet;Lentidão;Média;119.0;21;Sim;Não;4.0;Não;Não;Não;Não
+346;2025-03-10;Benguela;App;Particular;Fibra;Lentidão;Baixa;62.0;24;Sim;Não;5.0;Não;Não;Não;Não
+347;2025-01-28;Huambo;App;Empresarial;Fibra;Cobertura;Baixa;45.0;27;Sim;Não;5.0;Sim;Não;Sim;Não
+348;2025-03-12;Benguela;App;Empresarial;Fibra;Instalação;Média;103.0;20;Sim;Não;5.0;Não;Não;Sim;Não
+349;2025-01-09;Namibe;;Particular;Fibra;Fatura;Média;110.0;6;Sim;Não;5.0;Não;Não;Não;Não
+350;2025-01-04;Soyo;App;Particular;Pacote;Configuração;Baixa;107.0;13;Sim;Não;4.0;Não;Não;Não;Não
+351;2025-03-29;Lubango;WhatsApp;Particular;Internet;Lentidão;Baixa;76.0;26;Sim;Não;4.0;Não;Não;Não;Não
+352;2025-02-03;Malanje;WhatsApp;Particular;Movel;Lentidão;Média;70.0;6;Sim;Não;5.0;Não;Não;Não;Não
+353;2025-05-08;Sumbe;WhatsApp;Particular;Fibra;Configuração;Média;40.0;22;Não;Sim;1.0;Não;Não;Não;Sim
+354;2025-05-02;Huambo;Loja;Empresarial;Pacote;Fatura;Média;52.0;31;Sim;Não;4.0;Sim;Não;Sim;Não
+355;2025-03-31;Benguela;App;Particular;TV;Lentidão;Alta;10.0;28;Sim;Não;3.0;Não;Não;Sim;Não
+356;2025-02-07;Sumbe;Telefone;Particular;Movel;Instalação;Média;120.0;27;Não;Sim;1.0;Não;Não;Não;Sim
+357;2025-04-12;Huambo;App;Particular;Pacote;Fatura;Média;47.0;14;Não;Sim;2.0;Sim;Não;Não;Não
+358;2025-06-19;Cabinda;Loja;Empresarial;Fibra;Cancelamento;Média;115.0;32;Sim;Não;4.0;Não;Não;Sim;Não
+359;2025-06-08;Cabinda;Telefone;Empresarial;Fibra;Falha ligação;Baixa;118.0;30;Sim;Sim;3.0;Sim;Não;Sim;Não
+360;2025-02-13;Huambo;Telefone;Particular;Pacote;Lentidão;Média;82.0;17;Sim;Não;5.0;Não;Não;Sim;Não
+361;2025-06-12;Luanda;WhatsApp;Particular;TV;Cobertura;Média;123.0;14;Não;Sim;1.0;Não;Não;Não;Não
+362;2025-03-08;Sumbe;WhatsApp;Particular;Movel;Fatura;Média;39.0;19;Sim;Não;5.0;Não;Sim;Não;Não
+363;2025-05-03;Huambo;WhatsApp;Particular;Internet;Configuração;Baixa;100.0;16;Sim;Não;4.0;Não;Não;Sim;Não
+364;2025-04-22;Cabinda;Telefone;Particular;Movel;Lentidão;Baixa;107.0;23;Sim;Não;5.0;Não;Não;Não;Não
+365;2025-05-17;Uíge;WhatsApp;Particular;Fibra;Instalação;Baixa;106.0;24;Não;Sim;2.0;Não;Não;Não;Sim
+366;2025-05-17;Cabinda;Telefone;Particular;Pacote;Falha ligação;Média;131.0;23;Sim;Não;2.0;Sim;Não;Sim;Não
+367;2025-02-25;Luanda;Loja;Particular;Internet;Lentidão;Média;129.0;9;Sim;Não;3.0;Não;Não;Sim;Não
+368;2025-01-15;Malanje;Telefone;Particular;Fibra;Fatura;Média;123.0;17;Sim;Não;4.0;Não;Sim;Não;Não
+369;2025-01-25;Cabinda;Telefone;Empresarial;Internet;Fatura;Alta;97.0;22;Não;Sim;2.0;Não;Sim;Não;Sim
+370;2025-05-14;Soyo;WhatsApp;Particular;Internet;Lentidão;Alta;153.0;26;Sim;Não;3.0;Não;Não;Não;Não
+371;2025-05-30;Benguela;WhatsApp;Particular;Movel;;Alta;48.0;17;Sim;Não;4.0;Sim;Não;Sim;Não
+372;2025-03-28;Benguela;App;Particular;Internet;Cancelamento;Média;53.0;15;Não;Sim;;Não;Sim;Não;Não
+373;2025-01-06;Luanda;WhatsApp;Particular;Fibra;Instalação;Baixa;131.0;22;Não;Não;2.0;Não;Não;Não;Não
+374;2025-05-22;Uíge;App;Particular;Internet;Cobertura;Média;111.0;21;Não;Sim;3.0;Sim;Não;Não;Não
+375;2025-02-17;Huambo;Telefone;Particular;Internet;Lentidão;Média;73.0;6;Sim;Não;4.0;Não;Não;Não;Não
+376;2025-01-29;Luanda;Telefone;Particular;TV;Instalação;Baixa;80.0;17;Não;Sim;2.0;Não;Não;Sim;Sim
+377;2025-04-04;Benguela;Telefone;Particular;Internet;;Alta;78.0;36;Não;Sim;2.0;Não;Não;Não;Sim
+378;2025-01-15;Lubango;Telefone;Particular;Internet;Cancelamento;Média;61.0;39;Não;Sim;2.0;Não;Sim;Não;Não
+379;2025-06-18;Sumbe;Telefone;Particular;Internet;Falha ligação;Alta;130.0;29;Sim;Não;3.0;Sim;Não;Não;Não
+380;2025-02-16;Lubango;App;Particular;Pacote;Fatura;Média;36.0;16;Não;Sim;1.0;Não;Não;Não;Sim
+381;2025-03-24;Soyo;WhatsApp;Particular;TV;Falha ligação;Média;92.0;28;Sim;Não;3.0;Sim;Não;Não;Não
+382;2025-01-01;Sumbe;App;Particular;Movel;Lentidão;Média;164.0;14;Sim;Não;4.0;Não;Não;Não;Não
+383;2025-05-22;Luanda;WhatsApp;Empresarial;Movel;Fatura;Baixa;117.0;6;Sim;Não;5.0;Não;Não;Sim;Não
+384;2025-05-27;Soyo;Telefone;Particular;Pacote;Falha ligação;Média;270.0;42;Sim;Não;2.0;Sim;Não;Não;Não
+385;2025-04-08;Uíge;Telefone;Particular;Internet;Falha ligação;Média;103.0;45;Não;Não;3.0;Sim;Não;Sim;Não
+386;2025-01-03;Benguela;WhatsApp;Empresarial;Pacote;Lentidão;Média;109.0;11;Sim;Não;;Não;Não;Não;Não
+387;2025-05-28;Uíge;App;Particular;Movel;Lentidão;Baixa;109.0;25;Não;Sim;3.0;Não;Não;Não;Não
+388;2025-04-13;Soyo;Telefone;Particular;Movel;Configuração;Baixa;116.0;5;Sim;Não;5.0;Não;Não;Não;Não
+389;2025-02-20;Cabinda;Telefone;Particular;Movel;Configuração;Baixa;81.0;19;Sim;Não;5.0;Não;Não;Não;Não
+390;2025-01-29;Soyo;Telefone;Particular;Fibra;Lentidão;Média;92.0;22;Sim;Não;3.0;Não;Não;Não;Não
+391;2025-04-24;Uíge;App;Particular;TV;Lentidão;Baixa;93.0;7;Sim;Não;5.0;Não;Não;Não;Não
+392;2025-03-15;Sumbe;Telefone;Particular;Internet;Configuração;Média;108.0;22;Não;Não;4.0;Sim;Sim;Não;Não
+393;2025-02-06;Luanda;App;Particular;Fibra;Lentidão;Baixa;94.0;23;Não;Sim;3.0;Sim;Não;Não;Não
+394;2025-06-17;Luanda;Telefone;Particular;Pacote;Fatura;Baixa;;17;Sim;Não;4.0;Não;Não;Não;Não
+395;2025-05-11;Luanda;WhatsApp;Particular;Fibra;Instalação;Média;110.0;14;Sim;Não;4.0;Não;Não;Não;Não
+396;2025-03-20;Benguela;Telefone;Empresarial;Movel;Fatura;Baixa;92.0;13;Sim;Não;5.0;Não;Não;Sim;Não
+397;2025-05-23;Malanje;Loja;Particular;Fibra;Falha ligação;Média;142.0;22;Não;Não;2.0;Sim;Sim;Não;Não
+398;2025-04-17;Cabinda;Telefone;Particular;TV;Lentidão;Média;69.0;29;Sim;Não;3.0;Não;Não;Não;Não
+399;2025-05-19;Lubango;App;Particular;Movel;Lentidão;Média;73.0;20;Sim;Não;5.0;Não;Não;Não;Não
+400;2025-05-17;Lubango;App;Empresarial;TV;Instalação;Baixa;;23;Sim;Não;5.0;Não;Não;Não;Não
+401;2025-01-28;Benguela;Telefone;Particular;Pacote;Falha ligação;Baixa;145.0;23;Não;Sim;1.0;Não;Não;Não;Não
+402;2025-02-04;Huambo;Telefone;Particular;Fibra;Instalação;Média;116.0;24;Sim;Não;4.0;Não;Não;Não;Não
+403;2025-02-26;Soyo;Telefone;Empresarial;Movel;Instalação;Média;87.0;23;Sim;Não;5.0;Sim;Não;Não;Não
+404;2025-04-20;Lubango;WhatsApp;Empresarial;Internet;Cancelamento;Alta;92.0;12;Sim;Não;5.0;Não;Não;Sim;Não
+405;2025-04-26;Uíge;Loja;Empresarial;Movel;Cobertura;Média;308.0;26;Sim;Não;2.0;Não;Não;Sim;Não
+406;2025-02-18;Namibe;App;Empresarial;Internet;Cancelamento;Média;70.0;12;Sim;Não;5.0;Não;Não;Sim;Não
+407;2025-02-06;Cabinda;Telefone;Particular;Pacote;Configuração;Baixa;157.0;22;Sim;Não;4.0;Não;Não;Não;Não
+408;2025-03-24;Namibe;Telefone;Empresarial;Movel;Configuração;Média;133.0;7;Sim;Não;4.0;Não;Não;Sim;Não
+409;2025-01-24;Namibe;WhatsApp;Particular;Movel;Cobertura;Alta;134.0;38;Sim;Não;1.0;Não;Não;Sim;Não
+410;2025-02-07;Benguela;Loja;Particular;Movel;Falha ligação;Média;135.0;41;Não;Sim;1.0;Sim;Sim;Não;Sim
+411;2025-01-04;Huambo;Loja;Empresarial;Internet;Lentidão;Alta;86.0;32;Sim;Não;4.0;Não;Não;Sim;Não
+412;2025-04-15;Namibe;App;Particular;Movel;Configuração;Média;167.0;15;Sim;Não;4.0;Não;Não;Não;Não
+413;2025-01-15;Namibe;App;Particular;Movel;Lentidão;Média;71.0;29;Sim;Não;4.0;Não;Não;Sim;Não
+414;2025-06-06;Malanje;WhatsApp;Particular;Pacote;Instalação;Baixa;168.0;23;Sim;Não;3.0;Sim;Não;Sim;Não
+415;2025-04-05;Sumbe;;Particular;Movel;Cancelamento;Média;100.0;20;Sim;Não;4.0;Não;Não;Não;Não
+416;2025-01-28;Uíge;Telefone;Empresarial;Fibra;Cobertura;Média;67.0;21;Sim;Não;4.0;Sim;Não;Sim;Não
+417;2025-05-28;Sumbe;App;Particular;Movel;Cancelamento;Média;39.0;8;Não;Não;4.0;Sim;Não;Não;Não
+418;2025-02-19;Sumbe;App;Particular;Internet;Fatura;Média;65.0;12;Sim;Não;5.0;Não;Sim;Não;Não
+419;2025-03-27;Luanda;Loja;Particular;Movel;Configuração;Baixa;169.0;15;Sim;Não;2.0;Não;Não;Não;Não
+420;2025-03-29;Malanje;Telefone;Particular;Movel;Falha ligação;Baixa;147.0;26;Sim;Não;2.0;Sim;Não;Sim;Não
+421;2025-03-27;Uíge;Telefone;Particular;Movel;Falha ligação;Baixa;123.0;36;Não;Não;2.0;Não;Não;Não;Não
+422;2025-05-28;Namibe;WhatsApp;Empresarial;TV;Configuração;Baixa;57.0;22;Sim;Não;5.0;Não;Não;Sim;Não
+423;2025-01-30;Malanje;WhatsApp;Empresarial;Pacote;Lentidão;Baixa;90.0;19;Não;Não;4.0;Não;Não;Sim;Não
+424;2025-01-24;Cabinda;Telefone;Particular;TV;Falha ligação;Média;135.0;50;Não;Não;2.0;Sim;Sim;Não;Não
+425;2025-06-23;Namibe;Telefone;Particular;Fibra;Cobertura;Baixa;102.0;26;Não;Sim;3.0;Não;Sim;Não;Não
+426;2025-01-23;Huambo;WhatsApp;Particular;Internet;Lentidão;Baixa;73.0;13;Sim;Não;;Não;Não;Sim;Não
+427;2025-02-21;Malanje;Loja;Particular;Internet;Fatura;Baixa;84.0;28;Sim;Não;3.0;Não;Não;Não;Não
+428;2025-05-24;Lubango;Loja;Particular;Movel;Configuração;Baixa;164.0;18;Sim;Não;4.0;Não;Não;Sim;Não
+429;2025-04-24;Soyo;Telefone;Particular;Movel;Fatura;Alta;57.0;17;Não;Sim;3.0;Sim;Não;Não;Não
+430;2025-06-07;Luanda;Telefone;Particular;Movel;Instalação;Baixa;93.0;33;Sim;Não;3.0;Sim;Não;Não;Não
+431;2025-03-21;Malanje;Loja;Particular;Fibra;Instalação;Média;140.0;20;Não;Sim;1.0;Sim;Não;Não;Sim
+432;2025-04-27;Namibe;WhatsApp;Particular;Pacote;Falha ligação;Baixa;179.0;45;Sim;Não;2.0;Sim;Não;Não;Não
+433;2025-06-16;Namibe;App;Particular;Movel;Lentidão;Baixa;65.0;14;Não;Sim;;Sim;Sim;Não;Sim
+434;2025-03-29;Benguela;Telefone;Empresarial;Movel;Lentidão;Média;95.0;18;Não;Sim;2.0;Sim;Não;Sim;Não
+435;2025-04-24;Soyo;Loja;Particular;Internet;Instalação;Média;156.0;49;Sim;Não;1.0;Sim;Não;Não;Não
+436;2025-05-29;Huambo;Loja;Particular;TV;Fatura;Média;100.0;12;Não;Sim;3.0;Não;Sim;Não;Não
+437;2025-04-22;Luanda;Telefone;Empresarial;Fibra;Fatura;Média;28.0;6;Sim;Não;5.0;Não;Não;Sim;Não
+438;2025-01-08;Malanje;App;Empresarial;Movel;Instalação;Alta;81.0;37;Não;Não;2.0;Sim;Não;Sim;Não
+439;2025-04-09;Lubango;Loja;Particular;Movel;Instalação;Média;114.0;34;Sim;Não;;Sim;Não;Sim;Não
+440;2025-02-04;Malanje;;Empresarial;Internet;Cancelamento;Baixa;104.0;30;Sim;Não;4.0;Não;Não;Sim;Não
+441;2025-05-28;Benguela;WhatsApp;Particular;Fibra;Cobertura;Média;201.0;23;Não;Sim;1.0;Não;Não;Não;Não
+442;2025-03-13;Namibe;Telefone;Empresarial;Internet;;Média;71.0;23;Não;Sim;2.0;Não;Sim;Sim;Sim
+443;2025-05-17;Namibe;Telefone;Particular;Movel;Instalação;Média;148.0;45;Não;Não;;Sim;Não;Não;Não
+444;2025-05-25;Luanda;Loja;Particular;Movel;Fatura;Média;127.0;16;Não;Não;3.0;Sim;Sim;Não;Não
+445;2025-03-12;Cabinda;Telefone;Particular;Movel;Falha ligação;Alta;145.0;39;Não;Sim;1.0;Sim;Não;Não;Não
+446;2025-02-07;Cabinda;App;Particular;Internet;Falha ligação;Baixa;133.0;32;Não;Sim;1.0;Sim;Não;Não;Não
+447;2025-01-14;Sumbe;WhatsApp;Empresarial;Internet;Fatura;Média;114.0;21;Sim;Não;5.0;Não;Não;Sim;Não
+448;2025-05-16;Cabinda;Telefone;Empresarial;Internet;Falha ligação;Baixa;163.0;34;Sim;Não;3.0;Não;Não;Sim;Não
+449;2025-06-16;Uíge;Loja;Particular;Pacote;Fatura;Alta;113.0;23;Não;Sim;2.0;Não;Não;Não;Não
+450;2025-03-22;Cabinda;Loja;Particular;Internet;Falha ligação;Média;187.0;29;Não;Não;;Sim;Não;Não;Não
