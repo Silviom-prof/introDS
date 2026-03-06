@@ -1,0 +1,53 @@
+Analise o dataset CSV de reclamações de clientes de uma empresa de telecomunicações.
+
+Cada linha representa um cliente com um problema reportado e o texto da reclamação.
+
+Execute as seguintes etapas de análise:
+
+1) Análise de sentimento
+Analise o campo de texto da reclamação e classifique o sentimento como:
+- Positivo
+- Neutro
+- Negativo
+- Muito negativo
+
+2) Calcule um Churn Risk Score para cada cliente usando três fatores:
+
+A) Intensidade de reclamações
+Converta o número de reclamações numa escala de 1 a 5.
+
+B) Valor do cliente
+Classifique o valor mensal do cliente numa escala de 1 a 5
+(1 = baixo valor, 5 = alto valor).
+
+C) Sentimento da reclamação
+Atribua uma pontuação:
+Positivo = 1  
+Neutro = 2  
+Negativo = 4  
+Muito negativo = 5  
+
+3) Calcule o Churn Risk Score:
+
+Churn Risk Score =
+Pontuação de reclamações +
+Pontuação de valor do cliente +
+Pontuação do sentimento
+
+4) Priorize os clientes
+Liste os clientes por ordem de maior risco de churn.
+
+5) Identifique os 3 clientes mais críticos.
+
+6) Para os clientes críticos apresente:
+
+- impacto potencial para a empresa
+- ação imediata recomendada
+- checklist para o atendente antes de contactar o cliente
+
+7) Sugira entre 3 e 5 novos KPIs que a empresa deveria monitorizar.
+
+Regras:
+- Seja direto e conciso
+- Cada KPI deve ter apenas uma linha de explicação
+- Use linguagem operacional

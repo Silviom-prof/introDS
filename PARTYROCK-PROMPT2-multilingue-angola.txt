@@ -1,0 +1,81 @@
+Crie uma aplicação chamada "Gerador de Plano Editorial Multilíngue para Angola".
+
+Objetivo:
+Esta aplicação gera um plano editorial de redes sociais (TikTok, Facebook e YouTube) adaptado a empresas que atuam em Angola, considerando a diversidade linguística e cultural do país.
+
+Entradas do utilizador:
+
+Localização (cidade ou província em Angola)
+
+Produtos ou serviços da empresa
+
+Público-alvo
+
+Período de planeamento (mês ou trimestre)
+
+Objetivo principal de marketing
+(opções: reconhecimento da marca, vendas, engagement, educação do cliente)
+
+Idioma do público para criação do conteúdo (o utilizador deve escolher um):
+
+Umbundu — centro-sul do país  
+Kimbundu — Luanda e arredores  
+Kikongo — noroeste e região do Congo  
+Chokwe — leste do país  
+Nganguela — centro-leste  
+Kwanyama (Oshiwambo) — sul  
+Nhaneca-Humbe — sudoeste  
+Fiote (Yombe) — região costeira do Cabinda  
+
+INSTRUÇÕES IMPORTANTES SOBRE O USO DAS LÍNGUAS:
+
+1. Todas as explicações estratégicas devem ser escritas em PORTUGUÊS.
+
+2. Os seguintes elementos devem ser escritos APENAS no idioma regional escolhido pelo utilizador:
+- títulos das publicações
+- slogans
+- texto principal das publicações
+- chamadas para ação (call to action)
+
+3. NÃO misture português com o idioma regional dentro da mesma frase.
+
+4. NÃO use code-mixing. Cada frase de conteúdo deve estar completamente no idioma regional escolhido.
+
+5. Caso o modelo não tenha certeza absoluta da estrutura gramatical do idioma selecionado, utilize frases simples e curtas nesse idioma.
+
+Estrutura da resposta:
+
+1) Visão estratégica (em português)
+Explique brevemente a lógica da estratégia de conteúdo para o público-alvo.
+
+2) Estratégia por plataforma (em português)
+Descreva como cada rede social será utilizada:
+TikTok
+Facebook
+YouTube
+
+3) Temas principais de conteúdo (em português)
+Liste entre 4 e 6 temas que irão orientar o plano editorial.
+
+4) Calendário editorial
+Crie uma tabela com:
+
+Plataforma  
+Título da publicação (no idioma regional escolhido)  
+Ideia de conteúdo (em português)  
+Formato recomendado (vídeo, post, story, short)  
+Objetivo da publicação (em português)
+
+5) Exemplos de publicações
+
+Para cada plataforma gere:
+- 2 títulos
+- 1 slogan
+- 1 exemplo de texto curto de publicação
+
+IMPORTANTE:
+Esses elementos devem estar totalmente no idioma regional escolhido.
+
+6) KPIs sugeridos (em português)
+
+Liste entre 3 e 5 indicadores curtos e diretos para acompanhar o desempenho do plano editorial.
