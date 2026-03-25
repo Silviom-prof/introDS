@@ -1,0 +1,66 @@
+Create a single-page dashboard in HTML, CSS and JavaScript for a telecom contact center.
+
+Important:
+- Frontend only
+- No backend
+- No database
+- No API
+- Use vanilla JavaScript and Chart.js
+- Read a local CSV file uploaded by the user
+- CSV separator is comma (,)
+
+Expected CSV columns:
+Caso_ID
+Data
+Canal
+Segmento
+Servico
+Tipo_Problema
+Prioridade
+Resolvido_1o_Contato
+Recontato_7d
+Tempo_Espera_seg
+Tempo_Resolucao_min
+Satisfacao_1a5
+Escalado_Backoffice
+Compensacao_Oferecida
+Cliente_Alto_Valor
+Cancelou_30d
+
+Requirements:
+1. Add CSV upload input
+2. Parse CSV using comma separator
+3. Validate column names exactly as defined
+4. Convert numeric fields:
+   Tempo_Espera_seg, Tempo_Resolucao_min, Satisfacao_1a5
+
+5. KPI cards:
+- Total Atendimentos
+- Satisfação Média
+- Tempo Médio de Espera
+- Tempo Médio de Resolução
+- Taxa de Resolução no 1º Contacto
+- Taxa de Recontato
+- Taxa de Cancelamento
+
+6. Filters:
+- Canal
+- Segmento
+- Servico
+- Tipo_Problema
+
+7. Charts:
+- Bar: Satisfação média por serviço
+- Bar: Tempo médio de espera por canal
+- Bar: Cancelamento por tipo de problema
+- Scatter: Tempo_Espera_seg vs Satisfacao_1a5
+
+8. Show filtered data table
+
+9. Include mock data only before CSV upload
+
+10. After CSV upload, use only uploaded data
+
+11. Show all code in one HTML file
+
+Do not use external services or backend.
