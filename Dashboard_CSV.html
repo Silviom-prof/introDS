@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telecom Contact Center Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #64748b;
+            --success: #22c55e;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --bg: #f8fafc;
+        }
+        body { background-color: var(--bg); font-family: 'Inter', sans-serif; }
+        .card { @apply bg-white p-4 rounded-xl shadow-sm border border-slate-200; }
+        .kpi-title { @apply text-slate-500 text-xs font-semibold uppercase tracking-wider mb-1; }
+        .kpi-value { @apply text-2xl font-bold text-slate-800; }
+        .chart-container { position: relative; height: 250px; width: 100%; }
+        select, input { @apply border border-slate-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 outline-none; }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <!-- Header & Upload -->
+    <header class="mb-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+            <h1 class="text-2xl font-bold text-slate-900">Dashboard Telecom Contact Center</h1>
+            <p class="text-slate-500">Análise de performance e satisfação do cliente</p>
+        </div>
+        <div class="flex items-center gap-3 bg-white p-3 rounded-lg shadow-sm border border-slate-200">
+            <label class="text-sm font-medium text-slate-700">Carregar CSV:</label>
+            <input type="file" id="csvInput" accept=".csv" class="text-sm file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
+        </div>
+    </header>
+
+    <!-- Filters -->
+    <section class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+        <div class="flex flex-col gap-1">
+            <label class="text-xs font-bold text-slate-600">CANAL</label>
+            <select id="filterCanal"><option value="All">Todos</option></select>
+        </div>
+        <div class="flex flex-col gap-1">
+            <label class="text-xs font-bold text-slate-600">SEGMENTO</label>
+            <select id="filterSegmento"><option value="All">Todos</option></select>
+        </div>
+        <div class="flex flex-col gap-1">
+            <label class="text-xs font-bold text-slate-600">SERVIÇO</label>
+            <select id="filterServico"><option value="All">Todos</option></select>
+        </div>
+        <div class="flex flex-col gap-1">
+            <label class="text-xs font-bold text-slate-600">TIPO DE PROBLEMA</label>
+            <select id="filterProblema"><option value="All">Todos</option></select>
+        </div>
+    </section>
+
+    <!-- KPI Cards -->
+    <section class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 mb-8" id="kpiContainer">
+        <div class="card"><div class="kpi-title">Atendimentos</div><div class="kpi-value" id="kpi-total">-</div></div>
+        <div class="card"><div class="kpi-title">Satisfação Médio</div><div class="kpi-value" id="kpi-sat">-</div></div>
+        <div class="card"><div class="kpi-title">Espera (s)</div><div class="kpi-value" id="kpi-espera">-</div></div>
+        <div class="card"><div class="kpi-title">Resolução (min)</div><div class="kpi-value" id="kpi-resolucao">-</div></div>
+        <div class="card"><div class="kpi-title">FCR %</div><div class="kpi-value" id="kpi-fcr">-</div></div>
+        <div class="card"><div class="kpi-title">Recontato %</div><div class="kpi-value" id="kpi-recontato">-</div></div>
+        <div class="card"><div class="kpi-title">Churn %</div><div class="kpi-value" id="kpi-churn">-</div></div>
+    </section>
+
+    <!-- Charts -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <div class="card">
+            <h3 class="font-bold text-slate-700 mb-4">Satisfação Média por Serviço</h3>
+            <div class="chart-container"><canvas id="chartSatisfacao"></canvas></div>
+        </div>
+        <div class="card">
+            <h3 class="font-bold text-slate-700 mb-4">Tempo Médio de Espera por Canal (seg)</h3>
+            <div class="chart-container"><canvas id="chartEspera"></canvas></div>
+        </div>
+        <div class="card">
+            <h3 class="font-bold text-slate-700 mb-4">Cancelamentos por Tipo de Problema</h3>
+            <div class="chart-container"><canvas id="chartCancelamento"></canvas></div>
+        </div>
+        <div class="card">
+            <h3 class="font-bold text-slate-700 mb-4">Espera vs Satisfação (Dispersão)</h3>
+            <div class="chart-container"><canvas id="chartScatter"></canvas></div>
+        </div>
+    </section>
+
+    <!-- Data Table -->
+    <section class="card overflow-hidden">
+        <div class="flex justify-between items-center mb-4">
+            <h3 class="font-bold text-slate-700">Dados Detalhados (Filtro Aplicado)</h3>
+            <span id="tableCount" class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-600 font-medium"></span>
+        </div>
+        <div class="overflow-x-auto max-h-96">
+            <table class="w-full text-left text-sm border-collapse">
+                <thead class="bg-slate-50 sticky top-0">
+                    <tr>
+                        <th class="p-3 border-b border-slate-200">ID</th>
+                        <th class="p-3 border-b border-slate-200">Data</th>
+                        <th class="p-3 border-b border-slate-200">Canal</th>
+                        <th class="p-3 border-b border-slate-200">Segmento</th>
+                        <th class="p-3 border-b border-slate-200">Serviço</th>
+                        <th class="p-3 border-b border-slate-200">Problema</th>
+                        <th class="p-3 border-b border-slate-200">Prioridade</th>
+                        <th class="p-3 border-b border-slate-200">Sat (1-5)</th>
+                    </tr>
+                </thead>
+                <tbody id="dataTableBody">
+                    <!-- Rows injected via JS -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script>
+        // Configuration
+        const REQUIRED_COLUMNS = [
+            'Caso_ID', 'Data', 'Canal', 'Segmento', 'Servico', 'Tipo_Problema', 
+            'Prioridade', 'Resolvido_1o_Contato', 'Recontato_7d', 'Tempo_Espera_seg', 
+            'Tempo_Resolucao_min', 'Satisfacao_1a5', 'Escalado_Backoffice', 
+            'Compensacao_Oferecida', 'Cliente_Alto_Valor', 'Cancelou_30d'
+        ];
+
+        let rawData = [];
+        let charts = {};
+
+        // Mock Data Generator
+        function generateMockData() {
+            const canals = ['Chat', 'Telefone', 'WhatsApp', 'Email'];
+            const segmentos = ['B2C', 'B2B', 'Premium'];
+            const servicos = ['Móvel', 'Fibra', 'TV', 'Combo'];
+            const problemas = ['Fatura', 'Lentidão', 'Sem Sinal', 'Mudança Morada'];
+            
+            const data = [];
+            for (let i = 1; i <= 50; i++) {
+                data.push({
+                    Caso_ID: `CS${1000 + i}`,
+                    Data: '2023-10-01',
+                    Canal: canals[Math.floor(Math.random() * canals.length)],
+                    Segmento: segmentos[Math.floor(Math.random() * segmentos.length)],
+                    Servico: servicos[Math.floor(Math.random() * servicos.length)],
+                    Tipo_Problema: problemas[Math.floor(Math.random() * problemas.length)],
+                    Prioridade: Math.random() > 0.8 ? 'Alta' : 'Normal',
+                    Resolvido_1o_Contato: Math.random() > 0.3 ? 'Sim' : 'Não',
+                    Recontato_7d: Math.random() > 0.8 ? 'Sim' : 'Não',
+                    Tempo_Espera_seg: Math.floor(Math.random() * 300),
+                    Tempo_Resolucao_min: Math.floor(Math.random() * 45),
+                    Satisfacao_1a5: Math.floor(Math.random() * 5) + 1,
+                    Escalado_Backoffice: 'Não',
+                    Compensacao_Oferecida: 'Não',
+                    Cliente_Alto_Valor: 'Sim',
+                    Cancelou_30d: Math.random() > 0.9 ? 'Sim' : 'Não'
+                });
+            }
+            return data;
+        }
+
+        // CSV Parser
+        function parseCSV(text) {
+            const lines = text.split(/\r?\n/);
+            if (lines.length < 2) return [];
+
+            const headers = lines[0].split(',').map(h => h.trim());
+            
+            // Validate Headers
+            const missing = REQUIRED_COLUMNS.filter(col => !headers.includes(col));
+            if (missing.length > 0) {
+                alert(`Erro: Colunas ausentes no CSV: ${missing.join(', ')}`);
+                return [];
+            }
+
+            const data = [];
+            for (let i = 1; i < lines.length; i++) {
+                if (!lines[i].trim()) continue;
+                const values = lines[i].split(',');
+                const obj = {};
+                headers.forEach((h, idx) => {
+                    let val = values[idx] ? values[idx].trim() : '';
+                    // Convert numeric fields
+                    if (['Tempo_Espera_seg', 'Tempo_Resolucao_min', 'Satisfacao_1a5'].includes(h)) {
+                        val = parseFloat(val) || 0;
+                    }
+                    obj[h] = val;
+                });
+                data.push(obj);
+            }
+            return data;
+        }
+
+        // Filtering Logic
+        function getFilteredData() {
+            const fCanal = document.getElementById('filterCanal').value;
+            const fSeg = document.getElementById('filterSegmento').value;
+            const fServ = document.getElementById('filterServico').value;
+            const fProb = document.getElementById('filterProblema').value;
+
+            return rawData.filter(d => {
+                return (fCanal === 'All' || d.Canal === fCanal) &&
+                       (fSeg === 'All' || d.Segmento === fSeg) &&
+                       (fServ === 'All' || d.Servico === fServ) &&
+                       (fProb === 'All' || d.Tipo_Problema === fProb);
+            });
+        }
+
+        // Dashboard Update Logic
+        function updateDashboard() {
+            const filtered = getFilteredData();
+            updateKPIs(filtered);
+            updateCharts(filtered);
+            updateTable(filtered);
+        }
+
+        function updateKPIs(data) {
+            const count = data.length;
+            if (count === 0) {
+                ['total', 'sat', 'espera', 'resolucao', 'fcr', 'recontato', 'churn'].forEach(k => {
+                    document.getElementById(`kpi-${k}`).innerText = '0';
+                });
+                return;
+            }
+
+            const avgSat = data.reduce((acc, curr) => acc + curr.Satisfacao_1a5, 0) / count;
+            const avgEspera = data.reduce((acc, curr) => acc + curr.Tempo_Espera_seg, 0) / count;
+            const avgRes = data.reduce((acc, curr) => acc + curr.Tempo_Resolucao_min, 0) / count;
+            const fcrCount = data.filter(d => d.Resolvido_1o_Contato === 'Sim').length;
+            const recCount = data.filter(d => d.Recontato_7d === 'Sim').length;
+            const churnCount = data.filter(d => d.Cancelou_30d === 'Sim').length;
+
+            document.getElementById('kpi-total').innerText = count;
+            document.getElementById('kpi-sat').innerText = avgSat.toFixed(1);
+            document.getElementById('kpi-espera').innerText = Math.round(avgEspera);
+            document.getElementById('kpi-resolucao').innerText = avgRes.toFixed(1);
+            document.getElementById('kpi-fcr').innerText = ((fcrCount / count) * 100).toFixed(0) + '%';
+            document.getElementById('kpi-recontato').innerText = ((recCount / count) * 100).toFixed(0) + '%';
+            document.getElementById('kpi-churn').innerText = ((churnCount / count) * 100).toFixed(0) + '%';
+        }
+
+        function updateCharts(data) {
+            // Groupings
+            const satByServico = {};
+            const waitByCanal = {};
+            const churnByProb = {};
+            const scatterData = data.map(d => ({ x: d.Tempo_Espera_seg, y: d.Satisfacao_1a5 }));
+
+            data.forEach(d => {
+                // Avg Sat per Service
+                if(!satByServico[d.Servico]) satByServico[d.Servico] = { sum: 0, count: 0 };
+                satByServico[d.Servico].sum += d.Satisfacao_1a5;
+                satByServico[d.Servico].count++;
+
+                // Avg Wait per Canal
+                if(!waitByCanal[d.Canal]) waitByCanal[d.Canal] = { sum: 0, count: 0 };
+                waitByCanal[d.Canal].sum += d.Tempo_Espera_seg;
+                waitByCanal[d.Canal].count++;
+
+                // Churn per Problem
+                if(!churnByProb[d.Tipo_Problema]) churnByProb[d.Tipo_Problema] = 0;
+                if(d.Cancelou_30d === 'Sim') churnByProb[d.Tipo_Problema]++;
+            });
+
+            const labelsSat = Object.keys(satByServico);
+            const valsSat = labelsSat.map(l => (satByServico[l].sum / satByServico[l].count).toFixed(2));
+
+            const labelsWait = Object.keys(waitByCanal);
+            const valsWait = labelsWait.map(l => (waitByCanal[l].sum / waitByCanal[l].count).toFixed(0));
+
+            const labelsChurn = Object.keys(churnByProb);
+            const valsChurn = labelsChurn.map(l => churnByProb[l]);
+
+            // Chart 1: Satisfação
+            charts.sat.data.labels = labelsSat;
+            charts.sat.data.datasets[0].data = valsSat;
+            charts.sat.update();
+
+            // Chart 2: Espera
+            charts.wait.data.labels = labelsWait;
+            charts.wait.data.datasets[0].data = valsWait;
+            charts.wait.update();
+
+            // Chart 3: Churn
+            charts.churn.data.labels = labelsChurn;
+            charts.churn.data.datasets[0].data = valsChurn;
+            charts.churn.update();
+
+            // Chart 4: Scatter
+            charts.scatter.data.datasets[0].data = scatterData;
+            charts.scatter.update();
+        }
+
+        function updateTable(data) {
+            const tbody = document.getElementById('dataTableBody');
+            const countSpan = document.getElementById('tableCount');
+            tbody.innerHTML = '';
+            countSpan.innerText = `${data.length} registros`;
+
+            data.slice(0, 100).forEach(d => {
+                const tr = document.createElement('tr');
+                tr.className = "hover:bg-slate-50 transition-colors";
+                tr.innerHTML = `
+                    <td class="p-3 border-b border-slate-100 font-mono text-xs">${d.Caso_ID}</td>
+                    <td class="p-3 border-b border-slate-100">${d.Data}</td>
+                    <td class="p-3 border-b border-slate-100">${d.Canal}</td>
+                    <td class="p-3 border-b border-slate-100">${d.Segmento}</td>
+                    <td class="p-3 border-b border-slate-100">${d.Servico}</td>
+                    <td class="p-3 border-b border-slate-100">${d.Tipo_Problema}</td>
+                    <td class="p-3 border-b border-slate-100"><span class="px-2 py-0.5 rounded-full text-xs ${d.Prioridade === 'Alta' ? 'bg-red-100 text-red-700' : 'bg-blue-100 text-blue-700'}">${d.Prioridade}</span></td>
+                    <td class="p-3 border-b border-slate-100 font-bold">${d.Satisfacao_1a5}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+            if(data.length > 100) {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `<td colspan="8" class="p-4 text-center text-slate-400 italic">Mostrando apenas os primeiros 100 registros...</td>`;
+                tbody.appendChild(tr);
+            }
+        }
+
+        function populateFilters() {
+            const fields = {
+                filterCanal: 'Canal',
+                filterSegmento: 'Segmento',
+                filterServico: 'Servico',
+                filterProblema: 'Tipo_Problema'
+            };
+
+            Object.entries(fields).forEach(([id, field]) => {
+                const select = document.getElementById(id);
+                const currentValue = select.value;
+                const uniqueValues = [...new Set(rawData.map(d => d[field]))].sort();
+                
+                select.innerHTML = '<option value="All">Todos</option>';
+                uniqueValues.forEach(val => {
+                    const opt = document.createElement('option');
+                    opt.value = val;
+                    opt.innerText = val;
+                    select.appendChild(opt);
+                });
+                select.value = currentValue || 'All';
+            });
+        }
+
+        // Initial Chart Setup
+        function setupCharts() {
+            const chartConfig = (type, label, color) => ({
+                type: type,
+                data: { labels: [], datasets: [{ label: label, data: [], backgroundColor: color, borderRadius: 4 }] },
+                options: { 
+                    responsive: true, 
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: { y: { beginAtZero: true } }
+                }
+            });
+
+            charts.sat = new Chart(document.getElementById('chartSatisfacao'), chartConfig('bar', 'Satisfação Média', '#3b82f6'));
+            charts.wait = new Chart(document.getElementById('chartEspera'), chartConfig('bar', 'Segundos', '#6366f1'));
+            charts.churn = new Chart(document.getElementById('chartCancelamento'), chartConfig('bar', 'Total Cancelamentos', '#ef4444'));
+            
+            charts.scatter = new Chart(document.getElementById('chartScatter'), {
+                type: 'scatter',
+                data: { datasets: [{ label: 'Atendimentos', data: [], backgroundColor: 'rgba(59, 130, 246, 0.5)' }] },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: { 
+                        x: { title: { display: true, text: 'Espera (seg)' } },
+                        y: { title: { display: true, text: 'Satisfação (1-5)' }, min: 0, max: 5.5 }
+                    }
+                }
+            });
+        }
+
+        // Event Listeners
+        window.onload = () => {
+            setupCharts();
+            rawData = generateMockData();
+            populateFilters();
+            updateDashboard();
+
+            // File Upload
+            document.getElementById('csvInput').addEventListener('change', function(e) {
+                const file = e.target.files[0];
+                if (!file) return;
+
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    const parsed = parseCSV(event.target.result);
+                    if (parsed.length > 0) {
+                        rawData = parsed;
+                        populateFilters();
+                        updateDashboard();
+                    }
+                };
+                reader.readAsText(file);
+            });
+
+            // Filter Changes
+            ['filterCanal', 'filterSegmento', 'filterServico', 'filterProblema'].forEach(id => {
+                document.getElementById(id).addEventListener('change', updateDashboard);
+            });
+        };
+    </script>
+</body>
+</html>
